@@ -445,6 +445,48 @@ h2 {
   width: 25px;
   height: 24px;
   background: url(../img/home/header/language.svg) 0 0/contain no-repeat;
+  z-index: 2;
+}
+
+.language__current {
+  position: relative;
+  z-index: 2;
+}
+
+.language__list {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% + 20px);
+  background: #000;
+  padding: 40px 10px 5px;
+  border-radius: 10px;
+  -webkit-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+.language__list li {
+  text-align: center;
+  padding: 2px 0;
+}
+
+.language__list li._active {
+  display: none;
+}
+
+.language__list li a:hover {
+  color: #3de19d;
+}
+
+.language._active .language__list {
+  opacity: 1;
+  visibility: visible;
 }
 
 .burger {
@@ -604,6 +646,10 @@ h2 {
   height: 24px;
   background: #5B5B5C;
   border-radius: 50%;
+}
+
+.footer__social li a::before {
+  display: none;
 }
 
 .footer__copiryght {
@@ -1085,6 +1131,7 @@ h2 {
   line-height: 32px;
   margin-bottom: 40px;
   color: #fff;
+  cursor: pointer;
 }
 
 .item-faq__question::after {

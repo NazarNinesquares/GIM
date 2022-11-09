@@ -8,3 +8,7 @@ $('.burger').on('click', function () {
 	$('.main-nav').toggleClass('_active');
 	$('body').toggleClass('lock');
 })
+
+$('.language').on('click', function () {
+	$(this).toggleClass('_active');
+})
