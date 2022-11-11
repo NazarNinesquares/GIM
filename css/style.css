@@ -519,7 +519,7 @@ h2 {
 .main-nav__item a::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -590,12 +590,12 @@ h2 {
   width: 25px;
   height: 24px;
   background: url(../img/home/header/language.svg) 0 0/contain no-repeat;
-  z-index: 2;
+  z-index: 3;
 }
 
 .language__current {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .language__list {
@@ -614,6 +614,7 @@ h2 {
   -webkit-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
   transition: all linear 0.2s;
+  z-index: 2;
 }
 
 .language__list li {
