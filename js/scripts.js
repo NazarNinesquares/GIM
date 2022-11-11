@@ -12,3 +12,8 @@ $('.burger').on('click', function () {
 $('.language').on('click', function () {
 	$(this).toggleClass('_active');
 })
+
+if($('.swiper').length) {
+
+	new Swiper('.swiper', {});
+}
