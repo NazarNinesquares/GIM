@@ -15,5 +15,21 @@ $('.language').on('click', function () {
 
 if($('.swiper').length) {
 
-	new Swiper('.swiper', {});
+	new Swiper('.swiper', {
+		
+		navigation: {
+			nextEl: '.steps-slider__next',
+			prevEl: '.steps-slider__prev'
+		},
+		
+		pagination: {
+			el: '.steps-slider__pagination',
+
+			type: 'bullets',
+			clickable: true,
+			renderBullet: function (index, className) {
+				return'<span class="' + className + '">' + (index + 1) + '</span>';
+			},
+		},
+	});
 }
