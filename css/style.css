@@ -234,7 +234,7 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: -10%;
+  margin-top: -16%;
 }
 
 .mainscreen__img img {
@@ -248,7 +248,7 @@ h2 {
 
 .mainscreen__img img.small {
   width: 73%;
-  height: 73%;
+  height: 94%;
 }
 
 .mainscreen__decor {
@@ -459,7 +459,7 @@ h2 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-bottom: 95px;
+  margin-bottom: 100px;
 }
 
 .header__logo {
@@ -472,6 +472,66 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.header__notice {
+  position: absolute;
+  left: 15px;
+  bottom: -50px;
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(0, 91, 187)), to(rgba(0, 91, 187, 0.1)));
+  background: -o-linear-gradient(left, rgb(0, 91, 187) 50%, rgba(0, 91, 187, 0.1) 100%);
+  background: linear-gradient(90deg, rgb(0, 91, 187) 50%, rgba(0, 91, 187, 0.1) 100%);
+  overflow: hidden;
+}
+
+.header__notice span {
+  display: inline-block;
+  position: relative;
+  font-family: "HelveticaNeueCyr-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #fff;
+  background: #161719;
+  border-radius: 40px;
+  padding: 5px 30px 5px 12px;
+  margin: 1px;
+}
+
+.header__notice span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  background: url(../img/home/header/notice.svg) center/contain no-repeat;
+}
+
+.header__notice::before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 270px;
+  height: 65px;
+  background: -o-radial-gradient(50% 50%, 50% 50%, rgba(255, 213, 0, 0.4) 0%, rgba(255, 213, 0, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 213, 0, 0.4) 0%, rgba(255, 213, 0, 0) 100%);
+  z-index: 2;
+}
+
+.logo {
+  position: relative;
+  -webkit-transform: translateX(-12px);
+      -ms-transform: translateX(-12px);
+          transform: translateX(-12px);
 }
 
 .logo__img {
@@ -1849,6 +1909,10 @@ h2 {
     margin-bottom: 200px;
   }
 
+  .mainscreen__img img.small {
+    height: 98%;
+  }
+
   .mainscreen-info__subtitle {
     font-size: 9px;
     margin-bottom: 15px;
@@ -1926,7 +1990,7 @@ h2 {
   }
 
   .header__cont {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   .header__logo {
@@ -2539,6 +2603,10 @@ h2 {
     z-index: 100;
   }
 
+  .header__notice {
+    bottom: -30px;
+  }
+
   .logo {
     position: relative;
     z-index: 100;
@@ -2553,25 +2621,29 @@ h2 {
 
   .main-nav {
     position: fixed;
-    top: -100%;
-    left: 0;
+    top: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     background: #161719;
-    padding-top: 150px;
+    padding-top: 155px;
+    padding-left: 15px;
     overflow: auto;
-    -webkit-transition: top linear 0.2s;
-    -o-transition: top linear 0.2s;
-    transition: top linear 0.2s;
+    -webkit-transition: left linear 0.2s;
+    -o-transition: left linear 0.2s;
+    transition: left linear 0.2s;
     z-index: 99;
   }
 
   .main-nav._active {
-    top: 0;
+    left: 0;
   }
 
   .main-nav__menu {
@@ -2579,20 +2651,17 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 
   .main-nav__item {
+    font-family: "HelveticaNeueCyr-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2;
     margin-right: 0px;
-    font-size: 20px;
     margin-bottom: 20px;
   }
 
