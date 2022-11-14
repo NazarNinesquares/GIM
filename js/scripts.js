@@ -13,6 +13,19 @@ $('.language').on('click', function () {
 	$(this).toggleClass('_active');
 })
 
+$(document).mouseup(function (e) {
+
+	let container = $('.language');
+	
+	if ($('.language').hasClass('_active')) {
+		if (!$("a").is(e.target)
+			&& !container.is(e.target)
+			&& container.has(e.target).length === 0) {
+			$('.language').removeClass('_active');
+		}
+	}
+});
+
 if($('.swiper').length) {
 
 	new Swiper('.swiper', {

@@ -644,6 +644,7 @@ h2 {
   position: relative;
   padding-left: 40px;
   line-height: 24px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -2717,7 +2718,7 @@ h2 {
     position: relative;
     padding-left: 40px;
     line-height: 24px;
-    cursor: pointer;
+    font-size: 18px;
   }
 
   .language::before {
