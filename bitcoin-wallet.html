@@ -16,9 +16,11 @@
 	<!-- <span class="masage">GIM don’t support accounts from Russian Federation</span> -->
 	<header class="header">
 	<div class='header__cont _cont-l'>
-		<a class="header__logo logo" href="index.html">
-			<img class="logo__img" src="img/home/header/logo.png" alt="">
-		</a>
+		<div class="header__logo-box">
+			<a class="header__logo logo" href="index.html">
+				<img class="logo__img" src="img/home/header/logo.png" alt="">
+			</a>
+		</div>
 		<nav class="header__nav main-nav">
 			<ul class="main-nav__menu">
 				<li class="main-nav__item">
@@ -42,26 +44,278 @@
 			</ul>
 			<div class="main-nav__app app">
 				<a href="#" class="app__link">
-					<img src='img/home/header/apstore.png' alt=''>
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.6" x="1" y="1" width="46" height="46" rx="13" stroke="white" stroke-width="2"/>
+						<path d="M30.8693 23.7635C30.8808 22.8436 31.1186 21.9416 31.5604 21.1415C32.0023 20.3414 32.6339 19.6692 33.3966 19.1874C32.9121 18.4763 32.273 17.8911 31.53 17.4783C30.7869 17.0655 29.9605 16.8365 29.1163 16.8093C27.3154 16.615 25.5695 17.9168 24.6518 17.9168C23.7163 17.9168 22.3034 16.8286 20.7819 16.8608C19.7977 16.8934 18.8386 17.1876 17.9979 17.7144C17.1572 18.2413 16.4637 18.983 15.9849 19.8672C13.9108 23.5576 15.4579 28.9813 17.4447 31.9643C18.4388 33.4251 19.6005 35.0567 21.1207 34.9988C22.6082 34.9354 23.1638 34.024 24.9594 34.024C26.7383 34.024 27.2595 34.9988 28.8105 34.9621C30.4067 34.9354 31.4124 33.4949 32.3716 32.0203C33.0858 30.9795 33.6354 29.8292 34 28.612C33.0726 28.2089 32.2813 27.5342 31.7245 26.672C31.1678 25.8098 30.8704 24.7982 30.8693 23.7635Z" fill="white"/>
+						<path d="M27.9398 14.8471C28.8101 13.7734 29.2389 12.3934 29.135 11C27.8054 11.1435 26.5772 11.7966 25.6951 12.8291C25.2638 13.3335 24.9335 13.9203 24.723 14.556C24.5126 15.1917 24.4261 15.8638 24.4685 16.5338C25.1336 16.5408 25.7915 16.3927 26.3928 16.1005C26.9941 15.8084 27.523 15.3798 27.9398 14.8471Z" fill="white"/>
+					</svg>
 				</a>
 				<a href="#" class="app__link">
-					<img src='img/home/header/googleplay.png' alt=''>
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect opacity="0.6" x="1" y="1" width="46" height="46" rx="13" stroke="white" stroke-width="2"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0406 14.1931L24.8476 24L15.0873 33.7603C15.0294 33.5461 15 33.3209 15 33.087V14.6559C15 14.4974 15.0139 14.3431 15.0406 14.1931ZM15.4438 13.182L25.5547 23.2929L30.0273 18.8203L29.971 18.7874L29.9702 18.7881L29.9728 18.7855L18.9994 12.3794C18.6006 12.1385 18.1359 12 17.6372 12C16.7235 12 15.9168 12.4693 15.4438 13.182ZM30.9202 19.3416L26.2618 24L30.7775 28.5158L34.7075 26.2329C35.5343 25.7834 36.0953 24.9056 36.0953 23.8929C36.0953 22.8877 35.5416 22.0136 34.723 21.5631L34.7139 21.5566L30.9202 19.3416ZM29.8846 29.037L25.5547 24.7071L15.5511 34.7107C16.0329 35.3384 16.7887 35.7422 17.6372 35.7422C18.1249 35.7422 18.5823 35.6092 18.9746 35.3766L19.0058 35.3582L29.8846 29.037Z" fill="#30A851"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0406 14.1931L24.8476 24L15.0873 33.7603C15.0294 33.5461 15 33.3209 15 33.087V14.6559C15 14.4974 15.0139 14.3431 15.0406 14.1931ZM15.4438 13.182L25.5547 23.2929L30.0273 18.8203L29.971 18.7874L29.9702 18.7881L29.9728 18.7855L18.9994 12.3794C18.6006 12.1385 18.1359 12 17.6372 12C16.7235 12 15.9168 12.4693 15.4438 13.182ZM30.9202 19.3416L26.2618 24L30.7775 28.5158L34.7075 26.2329C35.5343 25.7834 36.0953 24.9056 36.0953 23.8929C36.0953 22.8877 35.5416 22.0136 34.723 21.5631L34.7139 21.5566L30.9202 19.3416ZM29.8846 29.037L25.5547 24.7071L15.5511 34.7107C16.0329 35.3384 16.7887 35.7422 17.6372 35.7422C18.1249 35.7422 18.5823 35.6092 18.9746 35.3766L19.0058 35.3582L29.8846 29.037Z" fill="white"/>
+					</svg>
 				</a>
 			</div>
-			<div class="main-nav__language language">
+			<!-- <div class="main-nav__language language">
 				<span class="language__current">Ru</span>
 				<ul class="language__list">
 					<li class="_active"><a href="#">Ru</a></li>
 					<li><a href="#">En</a></li>
 					<li><a href="#">Uk</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</nav>
+		<div class="header__notice notice">
+			<span>We don’t support Russian accounts</span>
+		</div>
 		<div class="header__burger burger">
 			<span></span>
 		</div>
 	</div>
 </header>
+
+<nav class="burger-nav">
+	<div class="burger-nav__cont _cont-l">
+		<div class="burger-nav__top top-burger-nav">
+			<a class="top-burger-nav__logo" href="index.html">
+				<img src='img/home/footer/logo.png' alt=''>
+			</a>
+			<div class="top-burger-nav__close">
+				<img src='img/home/header/close.png' alt=''>
+			</div>
+		</div>
+		<div class="burger-nav__content">
+			<div class="burger-nav__left left-burger-nav">
+				<div class="left-burger-nav__cont">
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab1">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Обмен криптовалюты
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Обменять XRP на USD</a></li>
+							<li><a href="#">Обменять LTC на USD</a></li>
+							<li><a href="#">Обменять DASH на USD</a></li>
+							<li><a href="#">Обменять ADA на USD</a></li>
+							<li><a href="#">Обменять ETC на USD</a></li>
+							<li><a href="#">Обменять GMT на USDT</a></li>
+							<li><a href="#">Обменять SOL на USDT</a></li>
+							<li><a href="#">Обменять USDT на гривну</a></li>
+							<li><a href="#">Обменять USDT на USD</a></li>
+							<li><a href="#">Обменять USD на BTC</a></li>
+							<li><a href="#">Обменять XMR на USD</a></li>
+							<li><a href="#">Обменять BTC на гривну</a></li>
+							<li><a href="#">Обменять BTC на евро</a></li>
+							<li><a href="#">Обменять ETH на USD</a></li>
+							<li><a href="#">Обменять BTC на гривну</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab2">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Кошельки
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Кошелек Tether</a></li>
+							<li><a href="#">Кошелек Bitcoin</a></li>
+							<li><a href="#">Кошелек Ethereum</a></li>
+							<li><a href="#">Кошелек Ripple</a></li>
+							<li><a href="#">Кошелек Сosmos</a></li>
+							<li><a href="#">Кошелек Сardano</a></li>
+							<li><a href="#">Кошелек Bitcoin cash</a></li>
+							<li><a href="#">Кошелек Elrond</a></li>
+							<li><a href="#">Кошелек Dash</a></li>
+							<li><a href="#">Кошелек Monero</a></li>
+							<li><a href="#">Кошелек Zcash</a></li>
+							<li><a href="#">Кошелек Litecoin</a></li>
+							<li><a href="#">Кошелек Solana</a></li>
+							<li><a href="#">Кошелек Stellar</a></li>
+							<li><a href="#">Кошелек Dogecoin</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab3">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Купить криптовалюту
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Купить Tether</a></li>
+							<li><a href="#">Купить Shiba Inu</a></li>
+							<li><a href="#">Купить Ripple</a></li>
+							<li><a href="#">Купить Reserve Rights</a></li>
+							<li><a href="#">Купить Axie infinity</a></li>
+							<li><a href="#">Купить Cardano</a></li>
+							<li><a href="#">Купить Solana</a></li>
+							<li><a href="#">Купить BNB</a></li>
+							<li><a href="#">Купить Bitcoin</a></li>
+							<li><a href="#">Купить Ethereum</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab4">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Продать криптовалюту
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Продать Bitcoin</a></li>
+							<li><a href="#">Продать Ethereum</a></li>
+							<li><a href="#">Продать Ethereum classic</a></li>
+							<li><a href="#">Продать Dogecoin</a></li>
+							<li><a href="#">Продать TWT</a></li>
+							<li><a href="#">Продать Bitcoin Cash</a></li>
+							<li><a href="#">Продать Monero</a></li>
+							<li><a href="#">Продать Dash</a></li>
+							<li><a href="#">Продать Ripple</a></li>
+							<li><a href="#">Продать Tether</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab5">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Реферальная программа
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab6">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Партнерство
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab7">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Блог
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+							<li><a href="#">Lorem ipsum</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab8">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Документы
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">User Agreement Privacy</a></li>
+							<li><a href="#">Policyanti-Money Laundering</a></li>
+							<li><a href="#">Policy Cookies</a></li>
+							<li><a href="#">Policy Transparency</a></li>
+							<li><a href="#">Policy Risks</a></li>
+						</ul>
+					</div>
+					<div class="left-burger-nav__spoiler left-burger-nav__spoiler_tab9">
+						<p class="left-burger-nav__name">
+							<span>Назад</span>
+							Выбрать Язык
+						</p>
+						<ul class="left-burger-nav__contant">
+							<li><a href="#">Українська</a></li>
+							<li><a href="#">Русский</a></li>
+							<li><a href="#">English</a></li>
+							<li><a href="#">Polski</a></li>
+							<li><a href="#">Español</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="left-burger-nav__bottom bottom-burger-nav">
+					<div class="bottom-burger-nav__cont">
+						<div class="bottom-burger-nav__app app">
+							<a href="#" class="app__link">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect opacity="0.6" x="1" y="1" width="46" height="46" rx="13" stroke="#898989" stroke-width="2"/>
+									<path d="M30.8693 23.7635C30.8808 22.8436 31.1186 21.9416 31.5604 21.1415C32.0023 20.3414 32.6339 19.6692 33.3966 19.1874C32.9121 18.4763 32.273 17.8911 31.53 17.4783C30.7869 17.0655 29.9605 16.8365 29.1163 16.8093C27.3154 16.615 25.5695 17.9168 24.6518 17.9168C23.7163 17.9168 22.3034 16.8286 20.7819 16.8608C19.7977 16.8934 18.8386 17.1876 17.9979 17.7144C17.1572 18.2413 16.4637 18.983 15.9849 19.8672C13.9108 23.5576 15.4579 28.9813 17.4447 31.9643C18.4388 33.4251 19.6005 35.0567 21.1207 34.9988C22.6082 34.9354 23.1638 34.024 24.9594 34.024C26.7383 34.024 27.2595 34.9988 28.8105 34.9621C30.4067 34.9354 31.4124 33.4949 32.3716 32.0203C33.0858 30.9795 33.6354 29.8292 34 28.612C33.0726 28.2089 32.2813 27.5342 31.7245 26.672C31.1678 25.8098 30.8704 24.7982 30.8693 23.7635Z" fill="#3a3a3a"/>
+									<path d="M27.9398 14.8471C28.8101 13.7734 29.2389 12.3934 29.135 11C27.8054 11.1435 26.5772 11.7966 25.6951 12.8291C25.2638 13.3335 24.9335 13.9203 24.723 14.556C24.5126 15.1917 24.4261 15.8638 24.4685 16.5338C25.1336 16.5408 25.7915 16.3927 26.3928 16.1005C26.9941 15.8084 27.523 15.3798 27.9398 14.8471Z" fill="#3a3a3a"/>
+								</svg>
+							</a>
+							<a href="#" class="app__link">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect opacity="0.6" x="1" y="1" width="46" height="46" rx="13" stroke="#898989" stroke-width="2"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0406 14.1931L24.8476 24L15.0873 33.7603C15.0294 33.5461 15 33.3209 15 33.087V14.6559C15 14.4974 15.0139 14.3431 15.0406 14.1931ZM15.4438 13.182L25.5547 23.2929L30.0273 18.8203L29.971 18.7874L29.9702 18.7881L29.9728 18.7855L18.9994 12.3794C18.6006 12.1385 18.1359 12 17.6372 12C16.7235 12 15.9168 12.4693 15.4438 13.182ZM30.9202 19.3416L26.2618 24L30.7775 28.5158L34.7075 26.2329C35.5343 25.7834 36.0953 24.9056 36.0953 23.8929C36.0953 22.8877 35.5416 22.0136 34.723 21.5631L34.7139 21.5566L30.9202 19.3416ZM29.8846 29.037L25.5547 24.7071L15.5511 34.7107C16.0329 35.3384 16.7887 35.7422 17.6372 35.7422C18.1249 35.7422 18.5823 35.6092 18.9746 35.3766L19.0058 35.3582L29.8846 29.037Z" fill="none"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0406 14.1931L24.8476 24L15.0873 33.7603C15.0294 33.5461 15 33.3209 15 33.087V14.6559C15 14.4974 15.0139 14.3431 15.0406 14.1931ZM15.4438 13.182L25.5547 23.2929L30.0273 18.8203L29.971 18.7874L29.9702 18.7881L29.9728 18.7855L18.9994 12.3794C18.6006 12.1385 18.1359 12 17.6372 12C16.7235 12 15.9168 12.4693 15.4438 13.182ZM30.9202 19.3416L26.2618 24L30.7775 28.5158L34.7075 26.2329C35.5343 25.7834 36.0953 24.9056 36.0953 23.8929C36.0953 22.8877 35.5416 22.0136 34.723 21.5631L34.7139 21.5566L30.9202 19.3416ZM29.8846 29.037L25.5547 24.7071L15.5511 34.7107C16.0329 35.3384 16.7887 35.7422 17.6372 35.7422C18.1249 35.7422 18.5823 35.6092 18.9746 35.3766L19.0058 35.3582L29.8846 29.037Z" fill="#3a3a3a"/>
+								</svg>
+							</a>
+						</div>
+						<button class="bottom-burger-nav__language"></button>
+					</div>
+				</div>
+			</div>
+			<div class="burger-nav__right right-burger-nav">
+				<ul class="right-burger-nav__list">
+					<li id="tab1" class="right-burger-nav__item _active">Обмен криптовалюты</li>
+					<li id="tab2" class="right-burger-nav__item">Кошельки</li>
+					<li id="tab3" class="right-burger-nav__item">Купить криптовалюту</li>
+					<li id="tab4" class="right-burger-nav__item">Продать криптовалюту</li>
+				</ul>
+				<ul class="right-burger-nav__list">
+					<li id="tab5" class="right-burger-nav__item">Реферальная программа</li>
+					<li id="tab6" class="right-burger-nav__item">Партнерство</li>
+					<li id="tab7" class="right-burger-nav__item">Блог</li>
+					<li id="tab8" class="right-burger-nav__item">Документы</li>
+				</ul>
+				<ul class="right-burger-nav__list">
+					<li id="tab9" class="right-burger-nav__item right-burger-nav__item_language">Выбрать язык</li>
+				</ul>
+				<div class="right-burger-nav__app app">
+					<a href="#" class="app__link">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect opacity="0.6" x="1" y="1" width="46" height="46" rx="13" stroke="#898989" stroke-width="2"/>
+							<path d="M30.8693 23.7635C30.8808 22.8436 31.1186 21.9416 31.5604 21.1415C32.0023 20.3414 32.6339 19.6692 33.3966 19.1874C32.9121 18.4763 32.273 17.8911 31.53 17.4783C30.7869 17.0655 29.9605 16.8365 29.1163 16.8093C27.3154 16.615 25.5695 17.9168 24.6518 17.9168C23.7163 17.9168 22.3034 16.8286 20.7819 16.8608C19.7977 16.8934 18.8386 17.1876 17.9979 17.7144C17.1572 18.2413 16.4637 18.983 15.9849 19.8672C13.9108 23.5576 15.4579 28.9813 17.4447 31.9643C18.4388 33.4251 19.6005 35.0567 21.1207 34.9988C22.6082 34.9354 23.1638 34.024 24.9594 34.024C26.7383 34.024 27.2595 34.9988 28.8105 34.9621C30.4067 34.9354 31.4124 33.4949 32.3716 32.0203C33.0858 30.9795 33.6354 29.8292 34 28.612C33.0726 28.2089 32.2813 27.5342 31.7245 26.672C31.1678 25.8098 30.8704 24.7982 30.8693 23.7635Z" fill="#3a3a3a"/>
+							<path d="M27.9398 14.8471C28.8101 13.7734 29.2389 12.3934 29.135 11C27.8054 11.1435 26.5772 11.7966 25.6951 12.8291C25.2638 13.3335 24.9335 13.9203 24.723 14.556C24.5126 15.1917 24.4261 15.8638 24.4685 16.5338C25.1336 16.5408 25.7915 16.3927 26.3928 16.1005C26.9941 15.8084 27.523 15.3798 27.9398 14.8471Z" fill="#3a3a3a"/>
+						</svg>
+					</a>
+					<a href="#" class="app__link">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect opacity="0.6" x="1" y="1" width="46" height="46" rx="13" stroke="#898989" stroke-width="2"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0406 14.1931L24.8476 24L15.0873 33.7603C15.0294 33.5461 15 33.3209 15 33.087V14.6559C15 14.4974 15.0139 14.3431 15.0406 14.1931ZM15.4438 13.182L25.5547 23.2929L30.0273 18.8203L29.971 18.7874L29.9702 18.7881L29.9728 18.7855L18.9994 12.3794C18.6006 12.1385 18.1359 12 17.6372 12C16.7235 12 15.9168 12.4693 15.4438 13.182ZM30.9202 19.3416L26.2618 24L30.7775 28.5158L34.7075 26.2329C35.5343 25.7834 36.0953 24.9056 36.0953 23.8929C36.0953 22.8877 35.5416 22.0136 34.723 21.5631L34.7139 21.5566L30.9202 19.3416ZM29.8846 29.037L25.5547 24.7071L15.5511 34.7107C16.0329 35.3384 16.7887 35.7422 17.6372 35.7422C18.1249 35.7422 18.5823 35.6092 18.9746 35.3766L19.0058 35.3582L29.8846 29.037Z" fill="none"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.0406 14.1931L24.8476 24L15.0873 33.7603C15.0294 33.5461 15 33.3209 15 33.087V14.6559C15 14.4974 15.0139 14.3431 15.0406 14.1931ZM15.4438 13.182L25.5547 23.2929L30.0273 18.8203L29.971 18.7874L29.9702 18.7881L29.9728 18.7855L18.9994 12.3794C18.6006 12.1385 18.1359 12 17.6372 12C16.7235 12 15.9168 12.4693 15.4438 13.182ZM30.9202 19.3416L26.2618 24L30.7775 28.5158L34.7075 26.2329C35.5343 25.7834 36.0953 24.9056 36.0953 23.8929C36.0953 22.8877 35.5416 22.0136 34.723 21.5631L34.7139 21.5566L30.9202 19.3416ZM29.8846 29.037L25.5547 24.7071L15.5511 34.7107C16.0329 35.3384 16.7887 35.7422 17.6372 35.7422C18.1249 35.7422 18.5823 35.6092 18.9746 35.3766L19.0058 35.3582L29.8846 29.037Z" fill="#3a3a3a"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
 
 	<main class="main">
 		<section class="mainscreen">

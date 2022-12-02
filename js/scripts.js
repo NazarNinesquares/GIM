@@ -4,13 +4,37 @@ $('.item-faq__question').on('click', function () {
 })
 
 $('.burger').on('click', function () {
-	$(this).toggleClass('_active');
-	$('.main-nav').toggleClass('_active');
-	$('body').toggleClass('lock');
+	// $(this).toggleClass('_active');
+	$('.burger-nav').addClass('_active');
+	$('.bottom-burger-nav').addClass('_active');
+	$('body').addClass('lock');
 })
 
-$('.language').on('click', function () {
-	$(this).toggleClass('_active');
+$('.top-burger-nav__close').on('click', function () {
+	$('.burger-nav').removeClass('_active');
+	$('.bottom-burger-nav').removeClass('_active');
+	$('body').removeClass('lock');
+})
+
+$('.right-burger-nav__item').on('click', function () {
+	$('.right-burger-nav__item').removeClass('_active');
+	$(this).addClass('_active');
+	$('.left-burger-nav__spoiler').hide();
+	$('.left-burger-nav__spoiler_' + $(this).attr('id')).show();
+})
+
+$('.left-burger-nav__name').on('click', function () {
+	$('.left-burger-nav__contant').not($(this).next()).slideUp();
+	$('.left-burger-nav__spoiler').not($(this).parent()).removeClass('_active');
+	$(this).next().slideToggle();
+	$(this).parent().toggleClass('_active');
+})
+
+$('.bottom-burger-nav__language, .left-burger-nav__spoiler_tab9 > left-burger-nav__name').on('click', function () {
+	$('.left-burger-nav__contant').not($('.left-burger-nav__spoiler_tab9 .left-burger-nav__contant')).slideUp();
+	$('.left-burger-nav__spoiler').not($('.left-burger-nav__spoiler_tab9')).removeClass('_active');
+	$('.left-burger-nav__spoiler_tab9').toggleClass('_active');
+	$('.left-burger-nav__spoiler_tab9 .left-burger-nav__contant').slideToggle();
 })
 
 $(document).mouseup(function (e) {
@@ -46,3 +70,26 @@ if($('.swiper').length) {
 		},
 	});
 }
+
+$(document).scroll(function() {
+
+	let scrollDistance = $('.header').height() + $('.masage').height();
+	let scrollTop = $(window).scrollTop();
+
+	if (scrollTop > scrollDistance) {
+		$('.header, .mainscreen').addClass('_scroll');
+	} else {
+		$('.header, .mainscreen').removeClass('_scroll');
+	}
+});
+
+$('.faq__show').on('click', function () {
+	
+	$('.faq__box').toggleClass('_hide');
+
+	if ($('.faq__box').hasClass('_hide')) {
+		$('.faq__show').text('Больше вопросов')
+	} else {
+		$('.faq__show').text('Меньше вопросов')
+	}
+})
