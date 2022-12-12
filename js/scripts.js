@@ -4,7 +4,6 @@ $('.item-faq__question').on('click', function () {
 })
 
 $('.burger').on('click', function () {
-	// $(this).toggleClass('_active');
 	$('.burger-nav').addClass('_active');
 	$('.bottom-burger-nav').addClass('_active');
 	$('body').addClass('lock');
@@ -96,6 +95,17 @@ $('.faq__show').on('click', function () {
 	}
 })
 
+$('.side-wallets__more').on('click', function () {
+	
+	$('.list-wallets__list').toggleClass('_hide');
+
+	if ($('.list-wallets__list').hasClass('_hide')) {
+		$('.side-wallets__more').text('Eще 7')
+	} else {
+		$('.side-wallets__more').text('Показать меньше')
+	}
+})
+
 
 window.matchMedia('(max-width: 768px)').addEventListener('change', windowSize)
 
@@ -114,16 +124,3 @@ function windowSize(ma) {
 }
 
 windowSize();
-
-
-// var mediaQuery = window.matchMedia("screen and (min-width: 768px)");
-// mediaQuery.addListener(myFunc);
-
-// function myFunc(mq) {
-// 	if (mq.matches) {
-// 		$('.burger-nav').removeClass('_spoiler').addClass('_tab');
-// 	} else {
-// 		$('.burger-nav').removeClass('_tab').addClass('_spoiler');
-// 	}
-// }
-// myFunc(mediaQuery);

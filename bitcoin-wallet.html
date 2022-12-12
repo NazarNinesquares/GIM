@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/home/header/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="service/swiper.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>GIM - Bitcoin Wallet</title>
 </head>
@@ -13,9 +14,11 @@
 <body>
 
 <div class="wrapper">
-	<!-- <span class="masage">GIM don’t support accounts from Russian Federation</span> -->
+	<div class="masage">
+		<span class="masage__text">License: u4385834u5 - Federal System of US</span>
+	</div>
 	<header class="header">
-	<div class='header__cont _cont-l'>
+	<div class='header__cont _cont'>
 		<div class="header__logo-box">
 			<a class="header__logo logo" href="index.html">
 				<img class="logo__img" src="img/home/header/logo.png" alt="">
@@ -66,7 +69,7 @@
 </header>
 
 <nav class="burger-nav">
-	<div class="burger-nav__cont _cont-l">
+	<div class="burger-nav__cont _cont">
 		<div class="burger-nav__top top-burger-nav">
 			<a class="top-burger-nav__logo" href="index.html">
 				<img src='img/home/footer/logo.png' alt=''>
@@ -308,14 +311,14 @@
 
 	<main class="main">
 		<section class="mainscreen">
-			<div class="mainscreen__cont mainscreen__cont_big-margin _cont-l">
+			<div class="mainscreen__cont mainscreen__cont_big-margin _cont">
 				<div class="mainscreen__info mainscreen-info">
 					<span class="mainscreen-info__subtitle">GIM криптокошелек</span>
 					<div class="mainscreen-info__title">
-						<h2>BitCoin Wallet. Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+						<h2>Bitcoin (BTC) Кошелек</h2>
 					</div>
 					<p class="mainscreen-info__text">
-						Создай свой Bitcoin криптокошелек. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						Открой Bitcoin (BTC) кошелек для покупки, обмена и вывода криптовалюты наличными
 					</p>
 					<div class="mainscreen-info__buttons app-buttons">
 						<a href="#" class="app-buttons__link">
@@ -331,95 +334,216 @@
 				</div>
 			</div>
 		</section>
-		<div class="features">
-			<div class="features__cont _cont-l">
+		<section class="transfer">
+			<div class='transfer__cont _cont'>
+				<div class="transfer__content">
+					<div class="transfer__info info-transfer">
+						<h2 class="info-transfer__title">Завести и вывести крипту в кеш</h2>
+						<p class="info-transfer__subtitle">Можно покупать и продавать криптовалюту обменивая в фиат</p>
+						<div class="info-transfer__points points-info-transfer">
+							<div class="points-info-transfer__ibox">
+								<img src='img/bitcoin-wallet/transfer/02.png' alt=''>
+							</div>
+							<div class="points-info-transfer__text">
+								<div class="points-info-transfer__title">52 точки вывода</div>
+								<div class="points-info-transfer__subtitle">
+									Надежные и сертифицированные точки для вывода криптовалюты
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="transfer__ibox">
+						<img src='img/bitcoin-wallet/transfer/01.png' alt=''>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="features">
+			<div class="features__cont _cont">
+				<div class="features__text">
+					<h2 class="features__title">Как работает GIM</h2>
+					<p class="features__subtitle">
+						Криптокошелек для мгновенного пополнения и обналичивания цифровых денег в фиатные в твоем телефоне
+					</p>
+				</div>
 				<div class="features__item">
 					<p class="features__feature features__feature_1"><span>> </span>0,5<span>%</span></p>
 					<p class="features__desc">При пополнении кошелька</p>
 				</div>
 				<div class="features__item">
-					<p class="features__feature features__feature_2">52 <span>Пункта</span></p>
-					<p class="features__desc">Выдачи и приема налички</p>
+					<p class="features__feature features__feature_5">0 <span>%</span></p>
+					<p class="features__desc">Переводы между кошельками GIM</p>
 				</div>
 				<div class="features__item">
 					<p class="features__feature features__feature_4"><span>> </span>1,5<span>%</span></p>
 					<p class="features__desc">При выводе в кеш</p>
 				</div>
-			</div>
-		</div>
-		<section class="steps">
-			<div class='steps__cont _cont'>
-				<h2 class="steps__title">Четыре шага для<br>полноценной работы с GIM</h2>
-				<div class="steps__description">
-					<div class="steps__item item-steps">
-						<div class="item-steps__ibox">
-							<div class="item-steps__decor decor"></div>
-							<img src='img/home/steps/01.png' alt=''>
+				<div class="features__bottom bottom-features">
+					<div class="bottom-features__left">
+						<div class="bottom-features__ibox">
+							<img src='img/bitcoin-wallet/feature/03.png' alt=''>
 						</div>
-						<div class="item-steps__info info-item-steps">
-							<span class="info-item-steps__number">1</span>
-							<p class="info-item-steps__text">
-								<span>Скачать</span> приложение и зарегистрироваться
-							</p>
-							<div class="app-buttons">
-								<a href="#" class="app-buttons__link">
-									<img src='img/home/main/02.png' alt=''>
-								</a>
-								<a href="#" class="app-buttons__link">
-									<img src='img/home/main/03.png' alt=''>
-								</a>
-							</div>
-							<div class="info-item-steps__arrow">
-								<img src='img/home/steps/05.png' alt=''>
-							</div>
-						</div>
+						<h2 class="bottom-features__title">Обменивай</h2>
+						<p class="bottom-features__text">
+							Можем обменивать криптовалюту прямо из кошелька через USDT
+						</p>
 					</div>
-					<div class="steps__item item-steps">
-						<div class="item-steps__ibox">
-							<img src='img/home/steps/02.png' alt=''>
+					<div class="bottom-features__right">
+						<div class="bottom-features__ibox">
+							<img src='img/bitcoin-wallet/feature/04.png' alt=''>
 						</div>
-						<div class="item-steps__info info-item-steps">
-							<span class="info-item-steps__number">2</span>
-							<p class="info-item-steps__text">
-								<span>Пополнить баланс</span> через ближайшую точку приема наличных или альтернативный кошелек
-							</p>
-							<div class="info-item-steps__arrow">
-								<img src='img/home/steps/05.png' alt=''>
-							</div>
-						</div>
-					</div>
-					<div class="steps__item item-steps">
-						<div class="item-steps__ibox">
-							<div class="item-steps__decor item-steps__decor_special decor"></div>
-							<img src='img/home/steps/03.png' alt=''>
-						</div>
-						<div class="item-steps__info info-item-steps">
-							<span class="info-item-steps__number">3</span>
-							<p class="info-item-steps__text">
-								<span>Инвестируй, меняй и приумножай</span> свои активы в удобное время
-							</p>
-							<div class="info-item-steps__arrow">
-								<img src='img/home/steps/05.png' alt=''>
-							</div>
-						</div>
-					</div>
-					<div class="steps__item item-steps">
-						<div class="item-steps__ibox">
-							<div class="item-steps__decor decor"></div>
-							<img src='img/home/steps/04.png' alt=''>
-						</div>
-						<div class="item-steps__info info-item-steps">
-							<span class="info-item-steps__number">4</span>
-							<p class="info-item-steps__text">
-								<span>Выводи</span> криптовалюту за наличку, выбрав ближайший пункт обмена
-							</p>
-							<a href="#" class="btn btn_small">Начать</a>
-						</div>
+						<h2 class="bottom-features__title">Инвестируй</h2>
+						<p class="bottom-features__text">Торгуй криптовалютой и вовремя реагиуруй на движение рынка</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="what-is">
+		<section class="steps-slider">
+			<div class='steps-slider__cont _cont'>
+				<div class="steps-slider__content">
+					<div class="steps-slider__swiper swiper">
+						<div class="steps-slider__wrapper swiper-wrapper">
+							<div class="steps-slider__slide swiper-slide">
+								<div class="steps-slider__ibox">
+									<img src="img/home/steps/01.png" alt="">
+								</div>
+								<div class="steps-slider__info info-item-steps">
+									<span class="info-item-steps__number">1</span>
+									<p class="info-item-steps__text">
+										<span>Скачать</span> приложение и зарегистрироваться
+									</p>
+									<div class="app-buttons">
+										<a href="#" class="app-buttons__link">
+											<img src='img/home/main/02.png' alt=''>
+										</a>
+										<a href="#" class="app-buttons__link">
+											<img src='img/home/main/03.png' alt=''>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="steps-slider__slide swiper-slide">
+								<div class="steps-slider__ibox">
+									<img src="img/home/steps/02.png" alt="">
+								</div>
+								<div class="steps-slider__info info-item-steps">
+									<span class="info-item-steps__number">2</span>
+									<p class="info-item-steps__text">
+										<span>Пополнить баланс</span> через ближайшую точку приема наличных или альтернативный кошелек
+									</p>
+								</div>
+							</div>
+							<div class="steps-slider__slide swiper-slide">
+								<div class="steps-slider__ibox">
+									<img src="img/home/steps/03.png" alt="">
+								</div>
+								<div class="steps-slider__info info-item-steps">
+									<span class="info-item-steps__number">3</span>
+									<p class="info-item-steps__text">
+										<span>Инвестируй, меняй и приумножай</span> свои активы в удобное время
+									</p>
+								</div>
+							</div>
+							<div class="steps-slider__slide swiper-slide">
+								<div class="steps-slider__ibox">
+									<img src="img/home/steps/04.png" alt="">
+								</div>
+								<div class="steps-slider__info info-item-steps">
+									<span class="info-item-steps__number">4</span>
+									<p class="info-item-steps__text">
+										<span>Выводи</span> криптовалюту за наличку, выбрав ближайший пункт обмена
+									</p>
+									<a href="#" class="btn btn_small">Начать</a>
+								</div>
+							</div>
+						</div>
+						<div class="steps-slider__naw">
+							<div class="steps-slider__prev swiper-button-prev">
+								<svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.995 0L0.995001 8L8.995 16L11 14L4.995 8L11 2L8.995 0Z"/>
+								</svg>
+							</div>
+							<div class="steps-slider__pagination swiper-pagination">
+							</div>
+							<div class="steps-slider__next swiper-button-next">
+								<svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.995 0L0.995001 8L8.995 16L11 14L4.995 8L11 2L8.995 0Z"/>
+								</svg>
+							</div>
+						</div>
+					 </div>
+				</div>
+			</div>
+		</section>
+		<section class="wallets">
+			<div class='wallets__cont _cont'>
+				<div class="wallets__list list-wallets">
+					<h2 class="list-wallets__title">Криптокошельки</h2>
+					<ul class="list-wallets__list _hide">
+						<li class="list-wallets__item list-wallets__item_1">
+							<a href="#"><span>Кошелек</span> Tether</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_2">
+							<a href="#"><span>Кошелек</span> Dash</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_3">
+							<a href="#"><span>Кошелек</span> Bitcoin</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_4">
+							<a href="#"><span>Кошелек</span> Monero</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_5">
+							<a href="#"><span>Кошелек</span> Ethereum</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_6">
+							<a href="#"><span>Кошелек</span> Zcash</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_7">
+							<a href="#"><span>Кошелек</span> Ripple</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_8">
+							<a href="#"><span>Кошелек</span> Litecoin</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_9">
+							<a href="#"><span>Кошелек</span> Сosmos</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_10">
+							<a href="#"><span>Кошелек</span> Solana</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_11">
+							<a href="#"><span>Кошелек</span> Сardano</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_12">
+							<a href="#"><span>Кошелек</span> Stellar</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_13">
+							<a href="#"><span>Кошелек</span> Bitcoin cash</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_14">
+							<a href="#"><span>Кошелек</span> Dogecoin</a>
+						</li>
+						<li class="list-wallets__item list-wallets__item_15">
+							<a href="#"><span>Кошелек</span> Elrond</a>
+						</li>
+					</ul>
+				</div>
+				<div class="wallets__side side-wallets">
+					<div class="side-wallets__ibox">
+						<img src='img/bitcoin-wallet/wallets/01.png' alt=''>
+					</div>
+					<div class="side-wallets__buttons app-buttons">
+						<a href="#" class="app-buttons__link">
+							<img src='img/home/main/02.png' alt=''>
+						</a>
+						<a href="#" class="app-buttons__link">
+							<img src='img/home/main/03.png' alt=''>
+						</a>
+					</div>
+					<button class="side-wallets__more">Eще 7</button>
+				</div>
+			</div>
+		</section>
+		<section class="what-is">
 			<div class='what-is__cont _cont'>
 				<div class="what-is__content">
 					<div class="what-is__ibox">
@@ -428,16 +552,19 @@
 					<div class="what-is__info">
 						<p class="what-is__title">Что такое Биткоин?</p>
 						<p class="what-is__text">
-							Биткоин была первой децентрализованной цифровой валютой, основанной на технологии блокчейна. Он был создан в 2008 году анонимным программистом, известным как Сатоши Накамото, который выпустил технический документ в списке рассылки по криптографии и позже открыл программное обеспечение, реализующее протокол.
+							Биткоин была первой децентрализованной цифровой валютой, основанной на технологии блокчейна. Он был создан в 2008 году анонимным программистом, известным как Сатоши Накамото, который выпустил технический документ в списке рассылки по криптографии и позжe
+						</p>
+						<p class="what-is__text">
+							открыл программное обеспечение, реализующее протокол. Который выпустил технический документ в списке рассылки по криптографии и позже открыл программное обеспечение, реализующее протокол.
 						</p>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="how-it-works">
+		</section>
+		<section class="how-it-works">
 			<div class='how-it-works__cont _cont'>
 				<div class="how-it-works__tbox">
-					<p class="how-it-works__question">Как работает Биткоин и где я могу получить биткойн-кошелек?</p>
+					<p class="how-it-works__question">Как пользоваться Bitcoin кошельком</p>
 					<div class="how-it-works__answer">
 						<p>
 							Биткоин - это программное обеспечение, которое работает на нескольких распределенных устройствах: от смартфонов в качестве мобильных кошельков, ПК до настольных кошельков и до ASIC для майнинга. Транзакции передаются между узлами одноранговым способом. Через несколько секунд данный блок будет распространен на все остальные узлы в сети.
@@ -451,8 +578,34 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="specifics">
+		</section>
+		<section class="create">
+			<div class='create__cont _cont'>
+				<p class="create__title">Как создать Bitcoin кошелек?</p>
+				<div class="create__item item-create">
+					<span class="item-create__number">1</span>
+					<p class="item-create__title">Магазин ценностей</p>
+					<p class="item-create__text">
+						<span>Hard Fork</span> Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
+					</p>
+				</div>
+				<div class="create__item item-create">
+					<span class="item-create__number">2</span>
+					<p class="item-create__title">Ворота в мир цифровых валют</p>
+					<p class="item-create__text">
+						<span>Hard Fork</span> Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
+					</p>
+				</div>
+				<div class="create__item item-create">
+					<span class="item-create__number">3</span>
+					<p class="item-create__title">Биткоин Биткоин Scripting</p>
+					<p class="item-create__text">
+						<span>Hard Fork</span> Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- <section class="specifics">
 			<div class='specifics__cont _cont'>
 				<div class="specifics__left">
 					<div class="specifics__ibox">
@@ -481,25 +634,76 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="terms">
+		</section> -->
+		<section class="terms">
 			<div class='terms__cont _cont'>
-				<p class="terms__title">Некоторые ключевые условия</p>
+				<p class="terms__title">Преимущества кошелька Bitcoin</p>
 				<div class="terms__item">
-					<p class="terms__name">Soft Fork</p>
 					<p class="terms__text">
-						Перейдите на протокол Биткоин , который делает недействительными старые блоки, которые были действительны в прошлом. Биткоин Функция транзакций Segwit была реализована в качестве «мягкого форка» для сети.
+						Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
 					</p>
 				</div>
 				<div class="terms__item">
-					<p class="terms__name">Hard Fork</p>
 					<p class="terms__text">
-						Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году.
+						Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
+					</p>
+				</div>
+				<div class="terms__item">
+					<p class="terms__text">
+						Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
+					</p>
+				</div>
+				<div class="terms__item">
+					<p class="terms__text">
+						Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными блоки или транзакции действительными. Ошибка BerkeleyDB Биткоин к случайному хард- Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который делает ранее недействительными
 					</p>
 				</div>
 			</div>
-		</div>
-		<div class="download">
+		</section>
+		<section class="protection">
+			<div class="protection__cont _cont">
+				<h2 class="protection__title">Безопасность</h2>
+				<div class="protection__list list-protection">
+					<div class="list-protection__item">
+						<div class="list-protection__ibox">
+							<img src="img/home/safety/01.png" alt="">
+						</div>
+						<p class="list-protection__feature">Двухфакторная аутентификация</p>
+						<p class="list-protection__text">
+							Можем обменивать криптовалюту прямо из кошелька через USDT. Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который
+						</p>
+					</div>
+					<div class="list-protection__item">
+						<div class="list-protection__ibox">
+							<img src="img/home/safety/02.png" alt="">
+						</div>
+						<p class="list-protection__feature">Биометрическая идентификация</p>
+						<p class="list-protection__text">
+							Можем обменивать криптовалюту прямо из кошелька через USDT. Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который
+						</p>
+					</div>
+					<div class="list-protection__item">
+						<div class="list-protection__ibox">
+							<img src="img/home/safety/03.png" alt="">
+						</div>
+						<p class="list-protection__feature">Шифрование данных</p>
+						<p class="list-protection__text">
+							Можем обменивать криптовалюту прямо из кошелька через USDT. Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который
+						</p>
+					</div>
+					<div class="list-protection__item">
+						<div class="list-protection__ibox">
+							<img src="img/home/safety/04.png" alt="">
+						</div>
+						<p class="list-protection__feature">Поддержка 24/7</p>
+						<p class="list-protection__text">
+							Можем обменивать криптовалюту прямо из кошелька через USDT. Биткоин сеть Биткоин в 2013 году. Hard Fork Перейдите на протокол Биткоин , который
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="download">
 			<div class='download__cont _cont'>
 				<div class="download__content">
 					<div class="download__ibox">
@@ -521,11 +725,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</main>
 
 	<footer class="footer">
-	<div class='footer__cont _cont-l'>
+	<div class='footer__cont _cont'>
 		<div class="footer__row">
 			<a class="footer__logo" href="index.html">
 				<img src="img/home/footer/logo.png" alt="">
@@ -592,6 +796,7 @@
 </div>
 
 	<script src="service/jquery.js"></script>
+	<script src="service/swiper.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 
