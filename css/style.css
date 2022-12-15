@@ -138,12 +138,28 @@ body.lock {
   padding: 0 15px;
 }
 
-h2 {
-  font-weight: 700;
+h1 {
+  display: inline;
   font-size: 48px;
+  font-weight: 700;
   line-height: 1.3;
-  letter-spacing: 1px;
+  color: #E1E1E1;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
   text-align: center;
+  color: #E1E1E1;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  color: #B6B6B6;
 }
 
 .notice {
@@ -1888,10 +1904,20 @@ h2 {
           justify-content: space-between;
   border-radius: 36px;
   background: #0D0D0D;
-  padding: 80px;
+  padding: 150px 80px;
 }
 
 .transfer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
 }
 
@@ -2016,9 +2042,9 @@ h2 {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
-  row-gap: 25px;
+  row-gap: 30px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -2151,7 +2177,7 @@ h2 {
 }
 
 .what-is__cont {
-  padding-bottom: 185px;
+  padding: 140px 0 150px;
 }
 
 .what-is__content {
@@ -2183,10 +2209,8 @@ h2 {
 }
 
 .what-is__title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #d4c9c8;
+  -moz-text-align-last: left;
+       text-align-last: left;
   margin-bottom: 35px;
 }
 
@@ -2213,6 +2237,7 @@ h2 {
   position: relative;
   background: #161718;
   border-radius: 18px;
+  border-left: 5px solid #1d1e1f;
   padding: 55px 55px 55px 150px;
 }
 
@@ -2230,9 +2255,8 @@ h2 {
 }
 
 .how-it-works__question {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.4;
+  -moz-text-align-last: left;
+       text-align-last: left;
   margin-bottom: 35px;
 }
 
@@ -2257,16 +2281,14 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 72px;
+  -webkit-column-gap: 72px;
+     -moz-column-gap: 72px;
+          column-gap: 72px;
   padding-bottom: 200px;
 }
 
 .create__title {
   width: 100%;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.4;
   margin-bottom: 75px;
 }
 
@@ -2395,11 +2417,8 @@ h2 {
 }
 
 .terms__title {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.4;
   width: 100%;
-  text-align: center;
+  margin-bottom: 15px;
 }
 
 .terms__item {
@@ -2456,7 +2475,7 @@ h2 {
 }
 
 .protection__title {
-  margin-bottom: 120px;
+  margin-bottom: 75px;
 }
 
 .list-protection {
@@ -2501,8 +2520,12 @@ h2 {
   line-height: 1.2;
 }
 
+.download {
+  background: #121314;
+}
+
 .download__cont {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .download__content {
@@ -2536,8 +2559,8 @@ h2 {
 
 .download__tbox {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 370px;
-          flex: 0 1 370px;
+      -ms-flex: 0 1 485px;
+          flex: 0 1 485px;
   padding-left: 65px;
 }
 
@@ -2558,6 +2581,7 @@ h2 {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
+  max-width: 370px;
   margin-bottom: 25px;
 }
 
@@ -2827,8 +2851,16 @@ h2 {
     max-width: 890px;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
   h2 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   .mainscreen__cont {
@@ -3187,6 +3219,10 @@ h2 {
     font-size: 14px;
   }
 
+  .features__subtitle {
+    font-size: 14px;
+  }
+
   .features__bottom {
     margin-top: 24px;
   }
@@ -3429,7 +3465,6 @@ h2 {
 
   .list-wallets__list {
     font-size: 14px;
-    row-gap: 20px;
   }
 
   .list-wallets__item {
@@ -3451,7 +3486,7 @@ h2 {
   }
 
   .what-is__cont {
-    padding-bottom: 145px;
+    padding: 80px 0 135px;
   }
 
   .what-is__ibox {
@@ -3468,7 +3503,6 @@ h2 {
   }
 
   .what-is__title {
-    font-size: 24px;
     margin-bottom: 25px;
   }
 
@@ -3486,7 +3520,6 @@ h2 {
   }
 
   .how-it-works__question {
-    font-size: 24px;
     margin-bottom: 25px;
   }
 
@@ -3499,12 +3532,13 @@ h2 {
   }
 
   .create__cont {
-    gap: 45px;
+    -webkit-column-gap: 45px;
+       -moz-column-gap: 45px;
+            column-gap: 45px;
     padding-bottom: 180px;
   }
 
   .create__title {
-    font-size: 24px;
     margin-bottom: 64px;
   }
 
@@ -3559,11 +3593,7 @@ h2 {
        -moz-column-gap: 90px;
             column-gap: 90px;
     row-gap: 45px;
-    margin-bottom: 120px;
-  }
-
-  .terms__title {
-    font-size: 24px;
+    padding-bottom: 120px;
   }
 
   .terms__item {
@@ -3587,7 +3617,7 @@ h2 {
   }
 
   .protection__title {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   .list-protection {
@@ -3616,7 +3646,7 @@ h2 {
   }
 
   .download__cont {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 
   .download__content {
@@ -3655,7 +3685,7 @@ h2 {
   }
 
   .steps-slider__swiper {
-    padding: 100px 0 185px;
+    padding: 85px 0 185px;
   }
 
   .steps-slider__slide {
@@ -3762,6 +3792,14 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
   .mainscreen__cont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3841,6 +3879,10 @@ h2 {
     margin: 60px auto 0;
   }
 
+  .app-buttons {
+    margin: 0 auto;
+  }
+
   .btn {
     font-size: 14px;
   }
@@ -3893,8 +3935,7 @@ h2 {
   }
 
   .masage {
-    display: none;
-    height: 0;
+    font-size: 11px;
   }
 
   .header__cont {
@@ -4285,7 +4326,6 @@ h2 {
 
   .list-wallets__list {
     font-size: 18px;
-    row-gap: 25px;
   }
 
   .list-wallets__list._hide .list-wallets__item:not(:nth-child(-n+8)) {
@@ -4315,11 +4355,12 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    font-size: 14px;
     padding: 20px 30px;
   }
 
   .what-is__cont {
-    padding-bottom: 85px;
+    padding-bottom: 80px;
   }
 
   .what-is__content {
@@ -4342,7 +4383,6 @@ h2 {
   }
 
   .what-is__title {
-    font-size: 22px;
     margin-bottom: 15px;
   }
 
@@ -4360,7 +4400,6 @@ h2 {
   }
 
   .how-it-works__question {
-    font-size: 22px;
     margin-bottom: 15px;
   }
 
@@ -4373,11 +4412,14 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    row-gap: 40px;
+    max-width: 500px;
+    margin: 0 auto;
     padding-bottom: 140px;
   }
 
   .create__title {
-    font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .create__item {
@@ -4413,8 +4455,7 @@ h2 {
   }
 
   .terms__title {
-    font-size: 22px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .terms__item {
