@@ -1232,46 +1232,53 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 85px auto;
-  gap: 15px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
 }
 
-.footer__cont > div {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.footer__left,
+.footer__right {
+  width: calc(50% - 30px);
+  padding-top: 35px;
+  padding-bottom: 50px;
 }
 
-.footer__row {
-  max-width: 200px;
+.footer__left {
+  padding-right: 60px;
+  border-right: 1px solid #494949;
+}
+
+.left-footer__top {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #494949;
+}
+
+.top-footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin-bottom: 75px;
 }
 
-.footer__logo {
+.top-footer__left {
+  margin-right: 115px;
+}
+
+.top-footer__logo {
   display: block;
+  width: 170px;
+  margin-bottom: 16px;
 }
 
-.footer__logo img {
+.top-footer__logo img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
   -webkit-transition: -webkit-filter linear 0.2s;
   transition: -webkit-filter linear 0.2s;
   -o-transition: filter linear 0.2s;
@@ -1279,82 +1286,195 @@ h3 {
   transition: filter linear 0.2s, -webkit-filter linear 0.2s;
 }
 
-.footer__logo:hover img {
+.top-footer__logo:hover img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-.footer__social {
+.top-footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.top-footer__icons a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+}
+
+.top-footer__icons a svg {
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: opacity linear 0.2s;
+  -o-transition: opacity linear 0.2s;
+  transition: opacity linear 0.2s;
+}
+
+.top-footer__icons a:hover svg {
+  opacity: 1;
+}
+
+.top-footer__right {
+  margin-top: 30px;
+}
+
+.top-footer__right p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #878787;
+}
+
+.top-footer__right p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.top-footer__right a {
+  color: #FBFBFB;
+}
+
+.top-footer__right a:hover {
+  text-decoration: underline;
+}
+
+.top-footer__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px;
+  row-gap: 30px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
 }
 
-.footer__social li a {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: #5B5B5C;
-  border-radius: 50%;
+.top-footer__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(50% - 25px);
 }
 
-.footer__social li a::before {
+.top-footer__info-item div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36px;
+          flex: 0 0 36px;
+  margin-right: 15px;
+}
+
+.top-footer__info-item div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.top-footer__info-item p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #A9A8A8;
+}
+
+.top-footer__center {
   display: none;
+  gap: 50px;
+  margin: 0 auto;
 }
 
-.footer__copiryght {
-  width: 100%;
-  font-weight: 400;
+.top-footer__center ul {
+  width: calc(50% - 25px);
   font-size: 12px;
-  line-height: 1.3;
+  font-weight: 400;
+  line-height: 2.5;
   color: #A9A8A8;
 }
 
-.footer li {
-  font-weight: 400;
+.top-footer__center ul li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.top-footer__center ul li:first-child {
   font-size: 12px;
-  line-height: 1.3;
-  color: #A9A8A8;
-  padding: 10px 0;
-}
-
-.footer li a {
-  position: relative;
-}
-
-.footer li a::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: #3DE19D;
-  -webkit-transition: width linear 0.2s;
-  -o-transition: width linear 0.2s;
-  transition: width linear 0.2s;
-  border-radius: 10px;
-}
-
-.footer li a:hover::before {
-  width: 100%;
-}
-
-.footer li.footer__title {
-  font-family: "Inter", sans-serif;
   font-weight: 600;
   line-height: 1.3;
-  font-size: 11px;
   text-transform: uppercase;
-  color: #AFAFAF;
-  margin-bottom: 30px;
-  padding: 0;
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.bottom-footer__info {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #A9A8A8;
+}
+
+.bottom-footer__info p {
+  margin-bottom: 16px;
+}
+
+.bottom-footer__info p a {
+  color: #fff;
+}
+
+.bottom-footer__info p a:hover {
+  text-decoration: underline;
+}
+
+.right-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+}
+
+.right-footer__row {
+  width: calc(33.33% - 14px);
+}
+
+.right-footer__row_doble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 50px;
+}
+
+.right-footer__list {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2.5;
+  color: #A9A8A8;
+}
+
+.right-footer__list li a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.right-footer__title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 23px;
 }
 
 .features {
@@ -2055,21 +2175,13 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   width: calc(50% - 5px);
-  padding-left: 48px;
 }
 
-.list-wallets__item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
+.list-wallets__item a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .list-wallets__item a:hover {
@@ -2086,64 +2198,27 @@ h3 {
   color: #878787;
 }
 
-.list-wallets__item_1::before {
-  background: url(../img/bitcoin-wallet/wallets/02.svg) center/contain no-repeat;
+.list-wallets__ibox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32px;
+          flex: 0 0 32px;
+  height: 32px;
+  margin-right: 16px;
 }
 
-.list-wallets__item_2::before {
-  background: url(../img/bitcoin-wallet/wallets/03.svg) center/contain no-repeat;
+.list-wallets__ibox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
-.list-wallets__item_3::before {
-  background: url(../img/bitcoin-wallet/wallets/04.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_4::before {
-  background: url(../img/bitcoin-wallet/wallets/05.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_5::before {
-  background: url(../img/bitcoin-wallet/wallets/06.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_6::before {
-  background: url(../img/bitcoin-wallet/wallets/07.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_7::before {
-  background: url(../img/bitcoin-wallet/wallets/08.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_8::before {
-  background: url(../img/bitcoin-wallet/wallets/09.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_9::before {
-  background: url(../img/bitcoin-wallet/wallets/10.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_10::before {
-  background: url(../img/bitcoin-wallet/wallets/11.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_11::before {
-  background: url(../img/bitcoin-wallet/wallets/12.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_12::before {
-  background: url(../img/bitcoin-wallet/wallets/13.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_13::before {
-  background: url(../img/bitcoin-wallet/wallets/14.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_14::before {
-  background: url(../img/bitcoin-wallet/wallets/15.svg) center/contain no-repeat;
-}
-
-.list-wallets__item_15::before {
-  background: url(../img/bitcoin-wallet/wallets/16.svg) center/contain no-repeat;
+.list-wallets_exchange .list-wallets__ibox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 44px;
+          flex: 0 0 44px;
 }
 
 .side-wallets {
@@ -2197,8 +2272,15 @@ h3 {
 
 .what-is__ibox {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
+      -ms-flex: 0 0 335px;
+          flex: 0 0 335px;
+}
+
+.what-is__ibox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .what-is__info {
@@ -2209,8 +2291,7 @@ h3 {
 }
 
 .what-is__title {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   margin-bottom: 35px;
 }
 
@@ -2255,8 +2336,7 @@ h3 {
 }
 
 .how-it-works__question {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   margin-bottom: 35px;
 }
 
@@ -3126,29 +3206,110 @@ h3 {
   }
 
   .footer__cont {
-    margin: 70px auto;
+    -webkit-column-gap: 44px;
+       -moz-column-gap: 44px;
+            column-gap: 44px;
   }
 
-  .footer__row {
-    max-width: 170px;
+  .footer__left,
+  .footer__right {
+    width: calc(50% - 22px);
+    padding-top: 25px;
+    padding-bottom: 40px;
   }
 
-  .footer__social li a {
-    width: 20px;
-    height: 20px;
+  .footer__left {
+    padding-right: 45px;
   }
 
-  .footer__copiryght {
+  .left-footer__top {
+    padding-bottom: 40px;
+    margin-bottom: 37px;
+  }
+
+  .top-footer__social {
+    margin-bottom: 60px;
+  }
+
+  .top-footer__left {
+    margin-right: 50px;
+  }
+
+  .top-footer__logo {
+    width: 130px;
+  }
+
+  .top-footer__icons {
+    gap: 12px;
+  }
+
+  .top-footer__icons a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 18px;
+            flex: 0 0 18px;
+  }
+
+  .top-footer__right {
+    margin-top: 15px;
+  }
+
+  .top-footer__right p {
     font-size: 10px;
   }
 
-  .footer li {
-    font-size: 10px;
+  .top-footer__right p:not(:last-child) {
+    margin-bottom: 12px;
   }
 
-  .footer li.footer__title {
+  .top-footer__info {
+    row-gap: 24px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+  }
+
+  .top-footer__info-item {
+    width: calc(50% - 20px);
+  }
+
+  .top-footer__info-item div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 26px;
+            flex: 0 0 26px;
+    margin-right: 12px;
+  }
+
+  .top-footer__info-item p {
     font-size: 9px;
-    margin-bottom: 25px;
+  }
+
+  .bottom-footer__info {
+    font-size: 9px;
+  }
+
+  .bottom-footer__info p {
+    margin-bottom: 12px;
+  }
+
+  .right-footer {
+    gap: 15px;
+  }
+
+  .right-footer__row {
+    width: calc(33.33% - 10px);
+  }
+
+  .right-footer__row_doble {
+    row-gap: 40px;
+  }
+
+  .right-footer__list {
+    font-size: 9px;
+  }
+
+  .right-footer__title {
+    font-size: 9px;
+    margin-bottom: 18px;
   }
 
   .features__cont {
@@ -3467,13 +3628,18 @@ h3 {
     font-size: 14px;
   }
 
-  .list-wallets__item {
-    padding-left: 36px;
+  .list-wallets__ibox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24px;
+            flex: 0 0 24px;
+    height: 24px;
+    margin-right: 12px;
   }
 
-  .list-wallets__item::before {
-    width: 24px;
-    height: 24px;
+  .list-wallets_exchange .list-wallets__ibox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33px;
+            flex: 0 0 33px;
   }
 
   .side-wallets__ibox {
@@ -3813,6 +3979,12 @@ h3 {
     margin-bottom: 120px;
   }
 
+  .mainscreen__img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .mainscreen__img img.small {
     margin-bottom: 50px;
   }
@@ -4060,45 +4232,100 @@ h3 {
   }
 
   .footer__cont {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin: 60px auto 60px auto;
-    -webkit-column-gap: 40px;
-       -moz-column-gap: 40px;
-            column-gap: 40px;
-    row-gap: 30px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
   }
 
-  .footer__cont > div {
+  .footer__right {
+    display: none;
+  }
+
+  .footer__left {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    padding-right: 0;
+    padding-top: 35px;
+    border: none;
   }
 
-  .footer__row {
-    width: calc(50% - 20px);
-    max-width: none;
-    margin-bottom: 0;
-  }
-
-  .footer__social li a {
-    width: 30px;
-    height: 30px;
-  }
-
-  .footer li {
-    font-size: 12px;
-  }
-
-  .footer li.footer__title {
-    font-size: 11px;
+  .left-footer__top {
+    padding-bottom: 30px;
     margin-bottom: 30px;
   }
 
-  .footer__copiryght {
+  .top-footer__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .top-footer__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0;
+    margin-bottom: 65px;
+  }
+
+  .top-footer__logo {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .top-footer__icons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .top-footer__icons a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 18px;
+            flex: 0 0 18px;
+  }
+
+  .top-footer__right {
+    max-width: 500px;
+    margin: 40px auto 0;
+  }
+
+  .top-footer__right p {
+    font-size: 14px;
+  }
+
+  .top-footer__info {
+    row-gap: 25px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .top-footer__info-item {
+    width: calc(50% - 15px);
+  }
+
+  .top-footer__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .bottom-footer__info {
     font-size: 12px;
+  }
+
+  .bottom-footer__info p {
+    margin-bottom: 16px;
   }
 
   .features__cont {
@@ -4334,12 +4561,20 @@ h3 {
 
   .list-wallets__item {
     width: 100%;
-    padding-left: 48px;
   }
 
-  .list-wallets__item::before {
-    width: 32px;
+  .list-wallets__ibox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 32px;
+            flex: 0 0 32px;
     height: 32px;
+    margin-right: 16px;
+  }
+
+  .list-wallets_exchange .list-wallets__ibox {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 44px;
+            flex: 0 0 44px;
   }
 
   .side-wallets__ibox {
