@@ -162,6 +162,13 @@ h3 {
   color: #B6B6B6;
 }
 
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .notice {
   display: inline-block;
   position: absolute;
@@ -2800,6 +2807,123 @@ h3 {
           transform: rotate(180deg);
 }
 
+.legal__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 140px;
+  margin-bottom: 300px;
+}
+
+.legal__menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  margin-right: 10px;
+}
+
+.legal__menu ul li a {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 2.3;
+  color: #BDBDBD;
+  -webkit-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+
+.legal__menu ul li a._active,
+.legal__menu ul li a:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+.legal__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.content-legal {
+  text-align: right;
+}
+
+.content-legal__update {
+  display: inline-block;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #828282;
+  margin-bottom: 40px;
+}
+
+.content-legal__block {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.content-legal__block span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.content-legal__block ul {
+  margin-bottom: 30px;
+}
+
+.content-legal__block ul li {
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #A9A8A8;
+  margin-left: 25px;
+  padding-left: 15px;
+}
+
+.content-legal__block ul li::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #A9A8A8;
+  border-radius: 50%;
+}
+
+.content-legal__block ul li:first-child {
+  font-weight: 500;
+  margin-left: 0;
+}
+
+.content-legal__block ul li:first-child::before {
+  width: 6px;
+  height: 6px;
+  top: 10px;
+}
+
+.content-legal__block h3 {
+  margin-bottom: 32px;
+}
+
+.content-legal__block p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #A9A8A8;
+}
+
+.content-legal__block h4 {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
 .advantages__cont {
   margin-bottom: 300px;
 }
@@ -2946,6 +3070,10 @@ h3 {
 
   h3 {
     font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 
   .mainscreen__cont {
@@ -3892,6 +4020,66 @@ h3 {
     height: 45px;
   }
 
+  .legal__cont {
+    padding-top: 70px;
+    margin-bottom: 260px;
+  }
+
+  .legal__menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 250px;
+            flex: 0 0 250px;
+  }
+
+  .legal__menu ul li a {
+    font-size: 14px;
+  }
+
+  .content-legal__update {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .content-legal__block span {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .content-legal__block ul {
+    margin-bottom: 25px;
+  }
+
+  .content-legal__block ul li {
+    font-size: 13px;
+    margin-left: 20px;
+    padding-left: 12px;
+  }
+
+  .content-legal__block ul li::before {
+    top: 9px;
+    width: 3px;
+    height: 3px;
+  }
+
+  .content-legal__block ul li:first-child::before {
+    width: 4px;
+    height: 4px;
+    top: 7px;
+  }
+
+  .content-legal__block h3 {
+    margin-bottom: 24px;
+  }
+
+  .content-legal__block p {
+    font-size: 13px;
+  }
+
+  .content-legal__block h4 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
   .advantages__cont {
     margin-bottom: 225px;
   }
@@ -4792,6 +4980,40 @@ h3 {
 
   .steps-slider__pagination span {
     padding: 12px 20px;
+  }
+
+  .legal__cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+    margin-bottom: 160px;
+  }
+
+  .legal__menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .legal__menu ul li a {
+    font-size: 16px;
+  }
+
+  .content-legal__update {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .content-legal__block span {
+    margin-bottom: 32px;
+  }
+
+  .content-legal__block ul {
+    margin-bottom: 20px;
   }
 
   .advantages__cont {
