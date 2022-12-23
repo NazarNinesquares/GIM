@@ -2839,7 +2839,7 @@ h4 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 300px;
           flex: 0 0 300px;
-  margin-right: 10px;
+  margin-right: 110px;
 }
 
 .legal__menu ul li a {
@@ -4262,8 +4262,9 @@ h4 {
 
   .legal__menu {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 250px;
-            flex: 0 0 250px;
+        -ms-flex: 0 0 220px;
+            flex: 0 0 220px;
+    margin-right: 50px;
   }
 
   .legal__menu ul li a {
