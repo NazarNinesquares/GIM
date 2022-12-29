@@ -3700,7 +3700,7 @@ h4 {
   }
 
   .features__feature_1 {
-    font-size: 48px;
+    font-size: 45px;
   }
 
   .features__feature_1 span {
@@ -3712,7 +3712,7 @@ h4 {
   }
 
   .features__feature_2::before {
-    height: 34px;
+    height: 36px;
   }
 
   .features__feature_2 span {
@@ -3720,7 +3720,7 @@ h4 {
   }
 
   .features__feature_3 {
-    font-size: 48px;
+    font-size: 45px;
   }
 
   .features__feature_3::before {
@@ -3728,11 +3728,19 @@ h4 {
   }
 
   .features__feature_4 {
-    font-size: 48px;
+    font-size: 45px;
   }
 
   .features__feature_4 span {
     font-size: 40px;
+  }
+
+  .features__feature_5 {
+    font-size: 48px;
+  }
+
+  .features__feature_5 span {
+    font-size: 36px;
   }
 
   .features__ibox {
