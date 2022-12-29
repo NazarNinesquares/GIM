@@ -286,19 +286,15 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 200px;
   padding-top: 140px;
-}
-
-.mainscreen__cont_big-margin {
-  margin-bottom: 275px;
 }
 
 .mainscreen__img {
   position: relative;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,8 +353,8 @@ h4 {
       -ms-flex-align: start;
           align-items: flex-start;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 64%;
+          flex: 1 1 64%;
   padding-right: 15px;
 }
 
@@ -1573,7 +1569,7 @@ h4 {
 }
 
 .features__feature_1 {
-  font-size: 64px;
+  font-size: 60px;
 }
 
 .features__feature_1::before {
@@ -1585,7 +1581,7 @@ h4 {
 }
 
 .features__feature_2 {
-  font-size: 60px;
+  font-size: 64px;
 }
 
 .features__feature_2::before {
@@ -1594,16 +1590,20 @@ h4 {
 }
 
 .features__feature_2 span {
-  font-size: 45px;
+  font-size: 48px;
 }
 
 .features__feature_3 {
-  font-size: 68px;
+  font-size: 60px;
 }
 
 .features__feature_3::before {
   height: 50px;
   background: url(../img/home/feature/03.png) 0 0/contain no-repeat;
+}
+
+.features__feature_3 span {
+  font-size: 54px;
 }
 
 .features__feature_4 {
@@ -1928,7 +1928,8 @@ h4 {
 }
 
 .list-safety__ibox {
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
+  max-width: 140px;
 }
 
 .list-safety__ibox img {
@@ -3300,9 +3301,6 @@ h4 {
 
   .mainscreen__cont {
     padding-top: 70px;
-  }
-
-  .mainscreen__cont_big-margin {
     margin-bottom: 200px;
   }
 
@@ -3312,6 +3310,12 @@ h4 {
 
   .mainscreen._scroll {
     padding-top: 108px;
+  }
+
+  .mainscreen-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 71%;
+            flex: 1 1 71%;
   }
 
   .mainscreen-info__subtitle {
@@ -3892,6 +3896,7 @@ h4 {
 
   .list-safety__ibox {
     margin-bottom: 15px;
+    max-width: 105px;
   }
 
   .list-safety__text {
@@ -4513,10 +4518,6 @@ h4 {
             flex-direction: column-reverse;
     margin-bottom: 120px;
     padding-top: 50px;
-  }
-
-  .mainscreen__cont_big-margin {
-    margin-bottom: 120px;
   }
 
   .mainscreen__img {
