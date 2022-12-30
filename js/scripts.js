@@ -70,17 +70,24 @@ if($('.swiper').length) {
 	});
 }
 
-$(document).scroll(function() {
+let scrollPos = 0;
+$(window).scroll(function () {
 
-	let scrollDistance = $('.header').height() + $('.masage').height();
-	let scrollTop = $(window).scrollTop();
-
-	if (scrollTop > scrollDistance) {
-		$('.header, .mainscreen').addClass('_scroll');
-		$('.header').slideDown();
+	let st = $(this).scrollTop();
+	if (st > scrollPos){
+		$('.masage, .header').addClass('_scroll');
 	} else {
-		$('.header, .mainscreen').removeClass('_scroll');
-		$('.header').removeAttr('style');
+		$('.masage, .header').removeClass('_scroll');
+	}
+	scrollPos = st;
+
+
+	if($(window).scrollTop() > 0) {
+		$('.header').addClass('_dark-bg');
+		$('.header__notice').addClass('_dt-hide');
+	} else {
+		$('.header').removeClass('_dark-bg');
+		$('.header__notice').removeClass('_dt-hide');
 	}
 });
 
