@@ -230,8 +230,8 @@ h4 {
 
 .decor {
   position: absolute;
-  background: -o-radial-gradient(circle, rgb(52, 52, 52) 0%, rgba(33, 33, 33, 0.1) 69%);
-  background: radial-gradient(circle, rgb(52, 52, 52) 0%, rgba(33, 33, 33, 0.1) 69%);
+  background: -o-radial-gradient(circle, rgb(52, 52, 52) 0%, rgba(33, 33, 33, 0) 65%);
+  background: radial-gradient(circle, rgb(52, 52, 52) 0%, rgba(33, 33, 33, 0) 65%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -397,6 +397,7 @@ h4 {
 .mainscreen-info__text {
   line-height: 1.6;
   margin-bottom: 65px;
+  max-width: 550px;
 }
 
 .app-buttons {
@@ -484,14 +485,23 @@ h4 {
 }
 
 .info-item-steps__number {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.3;
+  line-height: normal;
   color: #101D16;
   background-color: #fff;
   border-radius: 50%;
-  padding: 0 12px;
   margin-bottom: 25px;
 }
 
@@ -610,6 +620,9 @@ h4 {
 .header__notice {
   bottom: -75px;
   left: 15px;
+  -webkit-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+  transition: all linear 0.1s;
 }
 
 .logo {
@@ -949,6 +962,17 @@ h4 {
   row-gap: 30px;
 }
 
+.left-burger-nav__contant_column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left-burger-nav__contant_column li {
+  width: auto;
+}
+
 .left-burger-nav__contant li {
   width: calc(50% - 15px);
 }
@@ -957,6 +981,7 @@ h4 {
   -webkit-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
   transition: all linear 0.2s;
+  color: #878787;
 }
 
 .left-burger-nav__contant li a:hover {
@@ -1043,7 +1068,7 @@ h4 {
 
 .burger-nav._tab .right-burger-nav__list {
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .burger-nav._tab .right-burger-nav__item {
@@ -1051,7 +1076,7 @@ h4 {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.1;
-  color: #000;
+  color: #1E1E20;
   padding: 15px 15px 15px 55px;
   border-left: 4px solid transparent;
   cursor: pointer;
@@ -1061,6 +1086,11 @@ h4 {
 .burger-nav._tab .right-burger-nav__item:hover {
   border-left: 4px solid #E1E1E1;
   background: rgba(225, 225, 225, 0.3019607843);
+  font-weight: 700;
+}
+
+.burger-nav._tab .right-burger-nav__item a {
+  color: #1E1E20;
 }
 
 .burger-nav._tab .right-burger-nav__item_language::after {
@@ -1183,6 +1213,7 @@ h4 {
 
 .burger-nav._spoiler .left-burger-nav__contant li {
   width: 100%;
+  font-size: 18px;
 }
 
 .burger-nav._spoiler .left-burger-nav__contant li:not(:last-child) {
@@ -1692,6 +1723,12 @@ h4 {
   margin-bottom: 215px;
 }
 
+.trailer__video {
+  width: 100%;
+  height: 720px;
+  border-radius: 20px;
+}
+
 .trailer__info {
   width: 50%;
   display: -webkit-box;
@@ -1786,7 +1823,9 @@ h4 {
 }
 
 .network__title {
+  margin: 0 auto;
   margin-bottom: 160px;
+  max-width: 550px;
 }
 
 .map-network {
@@ -3278,7 +3317,8 @@ h4 {
 
 @media (min-width: 769px) {
   .header__notice._dt-hide {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -3377,7 +3417,8 @@ h4 {
 
   .info-item-steps__number {
     font-size: 24px;
-    padding: 0 9px;
+    width: 36px;
+    height: 36px;
     margin-bottom: 20px;
   }
 
@@ -3513,8 +3554,12 @@ h4 {
     margin-bottom: 40px;
   }
 
+  .burger-nav._tab .left-burger-nav__contant li {
+    font-size: 14px;
+  }
+
   .burger-nav._tab .right-burger-nav__list {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   .burger-nav._tab .right-burger-nav__item {
@@ -3794,6 +3839,11 @@ h4 {
 
   .trailer__cont {
     margin-bottom: 160px;
+  }
+
+  .trailer__video {
+    height: 543px;
+    border-radius: 15px;
   }
 
   .trailer__card {
@@ -4919,6 +4969,14 @@ h4 {
 
   .trailer__cont {
     margin-bottom: 120px;
+  }
+
+  .trailer__video {
+    display: block;
+    max-width: 400px;
+    height: 216px;
+    border-radius: 13px;
+    margin: 0 auto;
   }
 
   .trailer__info {
