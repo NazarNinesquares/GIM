@@ -1989,6 +1989,7 @@ h4 {
 
 .faq__title {
   margin-bottom: 70px;
+  font-size: 48px;
 }
 
 .faq__box._hide .faq__item:not(:nth-child(-n+10)) {
@@ -2311,6 +2312,7 @@ h4 {
 .what-is__main-title {
   text-align: center;
   margin-bottom: 216px;
+  font-size: 48px;
 }
 
 .what-is__content {
@@ -2360,7 +2362,7 @@ h4 {
 
 .what-is__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3;
   color: #A9A8A8;
 }
@@ -3012,6 +3014,7 @@ h4 {
 .advantages__title {
   margin-bottom: 80px;
   text-align: center;
+  font-size: 48px;
 }
 
 .advantages__subtitle {
@@ -3372,6 +3375,11 @@ h4 {
   margin-bottom: 282px;
 }
 
+.suitable__title {
+  font-size: 48px;
+  margin-bottom: 120px;
+}
+
 .suitable__content {
   position: relative;
   padding-bottom: 65%;
@@ -3386,8 +3394,8 @@ h4 {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 21%;
-  max-width: 195px;
+  width: 48%;
+  max-width: 413px;
 }
 
 .suitable__center img {
@@ -3411,6 +3419,7 @@ h4 {
   background: -webkit-gradient(linear, left top, right top, from(rgb(100, 100, 100)), to(rgb(61, 225, 157)));
   background: -o-linear-gradient(left, rgb(100, 100, 100) 0%, rgb(61, 225, 157) 100%);
   background: linear-gradient(90deg, rgb(100, 100, 100) 0%, rgb(61, 225, 157) 100%);
+  opacity: 0.3;
 }
 
 .item-suitable_1 {
@@ -3549,7 +3558,7 @@ h4 {
 
 .referal__info {
   width: 50%;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .info-referal__ibox {
@@ -3583,14 +3592,19 @@ h4 {
 .info-referal__btn {
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.2;
-  padding: 11px 10px;
+  line-height: 1.3;
+  padding: 15px 10px;
   min-width: 220px;
 }
 
 .necessary__cont {
-  max-width: 1028px;
+  max-width: 915px;
   margin-bottom: 260px;
+}
+
+.necessary__title {
+  font-size: 48px;
+  margin-bottom: 197px;
 }
 
 .necessary__block {
@@ -3609,8 +3623,8 @@ h4 {
 }
 
 .necessary__item_1 {
-  width: 370px;
-  height: 370px;
+  width: 320px;
+  height: 320px;
   margin-left: 80px;
 }
 
@@ -3632,8 +3646,8 @@ h4 {
 .necessary__item_2 {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 433px;
-  height: 433px;
+  width: 370px;
+  height: 370px;
   margin-top: -190px;
 }
 
@@ -3653,8 +3667,8 @@ h4 {
 }
 
 .necessary__item_3 {
-  width: 445px;
-  height: 445px;
+  width: 400px;
+  height: 400px;
   margin-top: -80px;
 }
 
@@ -3676,8 +3690,8 @@ h4 {
 .necessary__item_4 {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 440px;
-  height: 440px;
+  width: 355px;
+  height: 355px;
   margin-top: -185px;
   margin-right: 80px;
 }
@@ -4378,6 +4392,7 @@ h4 {
 
   .faq__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 
   .faq__item {
@@ -4496,6 +4511,7 @@ h4 {
 
   .what-is__main-title {
     margin-bottom: 160px;
+    font-size: 36px;
   }
 
   .what-is__ibox {
@@ -4509,7 +4525,7 @@ h4 {
   }
 
   .what-is__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .how-it-works__cont {
@@ -4817,6 +4833,7 @@ h4 {
 
   .advantages__title {
     margin-bottom: 20px;
+    font-size: 36px;
   }
 
   .advantages__subtitle {
@@ -4999,13 +5016,18 @@ h4 {
     margin-bottom: 195px;
   }
 
+  .suitable__title {
+    font-size: 36px;
+    margin-bottom: 90px;
+  }
+
   .suitable__content {
     max-width: 690px;
   }
 
   .suitable__center {
-    width: 25%;
-    max-width: 170px;
+    width: 44%;
+    max-width: 300px;
   }
 
   .item-suitable {
@@ -5145,13 +5167,18 @@ h4 {
 
   .info-referal__btn {
     font-size: 13px;
-    padding: 9px 10px;
+    padding: 12px 10px;
     min-width: 167px;
   }
 
   .necessary__cont {
-    max-width: 700px;
+    max-width: 710px;
     margin-bottom: 190px;
+  }
+
+  .necessary__title {
+    font-size: 36px;
+    margin-bottom: 100px;
   }
 
   .necessary__item_1 {
@@ -5195,8 +5222,8 @@ h4 {
   }
 
   .necessary__item_3 {
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     margin-top: -55px;
   }
 
@@ -5215,8 +5242,8 @@ h4 {
   }
 
   .necessary__item_4 {
-    width: 268px;
-    height: 268px;
+    width: 275px;
+    height: 275px;
     margin-top: -135px;
     margin-right: 60px;
   }
@@ -5335,10 +5362,6 @@ h4 {
 
   .btn {
     font-size: 14px;
-  }
-
-  .btn_medium {
-    display: none;
   }
 
   .notice {
@@ -6159,8 +6182,18 @@ h4 {
     margin: 0 auto;
   }
 
+  .item-advantages__ibox_small {
+    max-width: 168px;
+  }
+
   .item-advantages__title {
     font-size: 30px;
+  }
+
+  .item-advantages__title_small {
+    font-size: 22px;
+    max-width: 300px;
+    margin: 0 auto 25px;
   }
 
   .why__cont {
@@ -6273,13 +6306,18 @@ h4 {
     margin-bottom: 120px;
   }
 
+  .suitable__title {
+    margin-bottom: 85px;
+  }
+
   .suitable__content {
     max-width: 350px;
     padding-bottom: 335px;
   }
 
   .suitable__center {
-    max-width: 85px;
+    width: 52%;
+    max-width: 180px;
   }
 
   .item-suitable {
