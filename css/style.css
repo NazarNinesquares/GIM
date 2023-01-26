@@ -1825,7 +1825,7 @@ h4 {
 .network__title {
   margin: 0 auto;
   margin-bottom: 160px;
-  max-width: 550px;
+  max-width: 870px;
 }
 
 .map-network {
@@ -4289,6 +4289,7 @@ h4 {
 
   .network__title {
     margin-bottom: 120px;
+    max-width: 550px;
   }
 
   .map-network {
