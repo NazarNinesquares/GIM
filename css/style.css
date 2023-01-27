@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("../fonts/HelveticaNeueCyr-Bold2.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold2.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold2.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("../fonts/HelveticaNeueCyr-Medium2.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Medium2.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium2.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "HelveticaNeue";
-  src: url("../fonts/HelveticaNeueCyr-Regular2.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Regular2.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Regular2.woff2") format("woff2");
+  src: url("../fonts/HelveticaNeueCyr-Regular.ttf") format("truetype"), url("../fonts/HelveticaNeueCyr-Regular.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -530,16 +530,6 @@ h4 {
   background-color: #fff;
   border-radius: 50%;
   margin-bottom: 25px;
-}
-
-.info-item-steps__number span {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .info-item-steps__text {
@@ -2385,11 +2375,21 @@ h4 {
      object-fit: contain;
 }
 
+.what-is__ibox_show {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 420px;
+          flex: 0 0 420px;
+}
+
 .what-is__info {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-left: 140px;
+}
+
+.what-is__info_small {
+  max-width: 490px;
 }
 
 .what-is__title {
@@ -3787,14 +3787,6 @@ h4 {
   color: #E1E1E1;
 }
 
-.info-item-steps__number span {
-  height: 20px;
-}
-
-.info-item-steps__number span {
-  height: auto;
-}
-
 @media (min-width: 769px) {
   .header__notice._dt-hide {
     opacity: 0;
@@ -4612,6 +4604,16 @@ h4 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 230px;
             flex: 0 0 230px;
+  }
+
+  .what-is__ibox_show {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 315px;
+            flex: 0 0 315px;
+  }
+
+  .what-is__info_small {
+    max-width: 360px;
   }
 
   .what-is__title {
