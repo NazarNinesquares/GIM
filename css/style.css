@@ -154,6 +154,10 @@ h2 {
   color: #E1E1E1;
 }
 
+h2._big {
+  font-size: 48px;
+}
+
 h3 {
   font-size: 30px;
   font-weight: 700;
@@ -2758,8 +2762,8 @@ h4 {
 
 .download__ibox {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 180px;
-          flex: 0 0 180px;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
   height: 100%;
 }
 
@@ -3811,6 +3815,10 @@ h4 {
     font-size: 30px;
   }
 
+  h2._big {
+    font-size: 36px;
+  }
+
   h3 {
     font-size: 24px;
   }
@@ -4795,8 +4803,8 @@ h4 {
 
   .download__ibox {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 130px;
-            flex: 0 0 130px;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
   }
 
   .download__tbox {
@@ -5370,6 +5378,10 @@ h4 {
     font-size: 36px;
   }
 
+  h2._big {
+    font-size: 36px;
+  }
+
   h3 {
     font-size: 22px;
   }
@@ -5681,6 +5693,10 @@ h4 {
 
   .top-footer__right p {
     font-size: 14px;
+  }
+
+  .top-footer__right p br {
+    display: none;
   }
 
   .top-footer__info {
