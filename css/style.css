@@ -5263,7 +5263,7 @@ h4 {
   }
 
   .item-suitable_2::before {
-    top: 10%;
+    bottom: 10%;
     right: -61%;
   }
 
