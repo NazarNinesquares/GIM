@@ -6247,6 +6247,7 @@ h4 {
   .how-it-works__tbox {
     background: transparent;
     padding: 0 10px;
+    border-left: none;
   }
 
   .how-it-works__tbox::before {
