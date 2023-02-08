@@ -131,3 +131,12 @@ function windowSize(ma) {
 }
 
 windowSize();
+
+$('.main-nav_ancher li a').on('click', function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+
+	$('html').animate({
+		scrollTop: $('section[data-ancher="'+ $(this).data('ancher') +'"]').offset().top-$('header').height()
+	}, 500);
+})
