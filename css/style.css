@@ -212,6 +212,7 @@ h4 {
   position: absolute;
   background: -o-radial-gradient(30.18% 57.01%, 42.99% 42.99%, #FFFFFF 0%, #FFD18B 0.01%, rgba(255, 184, 139, 0.895336) 0.02%, rgba(255, 139, 139, 0.7) 75.52%);
   background: radial-gradient(42.99% 42.99% at 30.18% 57.01%, #FFFFFF 0%, #FFD18B 0.01%, rgba(255, 184, 139, 0.895336) 0.02%, rgba(255, 139, 139, 0.7) 75.52%);
+  mix-blend-mode: luminosity;
   opacity: 0.3;
   -webkit-filter: blur(129.72px);
           filter: blur(129.72px);
