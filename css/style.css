@@ -6630,6 +6630,14 @@ h4 {
     margin: 0 auto 30px;
   }
 
+  .item-why__title {
+    min-height: auto;
+  }
+
+  .item-why__title br {
+    display: none;
+  }
+
   .item-why__text {
     font-size: 15px;
   }
