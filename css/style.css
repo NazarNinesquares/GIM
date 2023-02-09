@@ -210,10 +210,8 @@ h4 {
 
 .decor {
   position: absolute;
-  background: -o-radial-gradient(30.18% 57.01%, 42.99% 42.99%, #FFFFFF 0%, #FFD18B 0.01%, rgba(255, 184, 139, 0.895336) 0.02%, rgba(255, 139, 139, 0.7) 75.52%);
-  background: radial-gradient(42.99% 42.99% at 30.18% 57.01%, #FFFFFF 0%, #FFD18B 0.01%, rgba(255, 184, 139, 0.895336) 0.02%, rgba(255, 139, 139, 0.7) 75.52%);
-  mix-blend-mode: luminosity;
-  opacity: 0.3;
+  background: #FFFFFF;
+  opacity: 0.16;
   -webkit-filter: blur(129.72px);
           filter: blur(129.72px);
   border-radius: 50%;
@@ -540,8 +538,10 @@ h4 {
   left: -14%;
   width: 600px;
   height: 600px;
-  background: -o-radial-gradient(30.18% 57.01%, 42.99% 42.99%, #FA0707 0%, #FFD18B 0.01%, rgba(255, 139, 139, 0.7) 75.52%);
-  background: radial-gradient(42.99% 42.99% at 30.18% 57.01%, #FA0707 0%, #FFD18B 0.01%, rgba(255, 139, 139, 0.7) 75.52%);
+  background: #FFFFFF;
+  -webkit-filter: blur(129.72px);
+          filter: blur(129.72px);
+  opacity: 0.12;
 }
 
 .item-steps__decor_3 {
@@ -1600,6 +1600,8 @@ h4 {
 }
 
 .features__cont {
+  position: relative;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
