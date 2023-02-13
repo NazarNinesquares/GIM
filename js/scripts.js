@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 $('.item-faq__question').on('click', function () {
 	$(this).toggleClass('_active');
 	$(this).next('.item-faq__answer').slideToggle();
@@ -139,4 +141,6 @@ $('.main-nav_ancher li a').on('click', function (e) {
 	$('html').animate({
 		scrollTop: $('section[data-ancher="'+ $(this).data('ancher') +'"]').offset().top-$('header').height()
 	}, 500);
+})
+
 })
