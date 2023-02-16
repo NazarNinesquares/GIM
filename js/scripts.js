@@ -5,7 +5,7 @@ $('.item-faq__question').on('click', function () {
 	$(this).next('.item-faq__answer').slideToggle();
 })
 
-$('.burger').on('click', function () {
+$('.burger__wrapper').on('click', function () {
 	$('.burger-nav').addClass('_active');
 	$('.bottom-burger-nav').addClass('_active');
 	$('body').addClass('lock');
@@ -77,18 +77,18 @@ $(window).scroll(function () {
 
 	let st = $(this).scrollTop();
 	if (st > scrollPos){
-		$('.masage, .header').addClass('_scroll');
+		$('.masage, .header, .burger-nav__top, .burger-nav._tab .burger-nav__right, .burger-nav._tab .burger-nav__left').addClass('_scroll');
 	} else {
-		$('.masage, .header').removeClass('_scroll');
+		$('.masage, .header, .burger-nav__top, .burger-nav._tab .burger-nav__right, .burger-nav._tab .burger-nav__left').removeClass('_scroll');
 	}
 	scrollPos = st;
 
 
 	if($(window).scrollTop() > 0) {
-		$('.header').addClass('_dark-bg');
+		$('.header').addClass('_color-bg');
 		$('.header__notice').addClass('_dt-hide');
 	} else {
-		$('.header').removeClass('_dark-bg');
+		$('.header').removeClass('_color-bg');
 		$('.header__notice').removeClass('_dt-hide');
 	}
 });
