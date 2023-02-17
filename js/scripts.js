@@ -20,8 +20,8 @@ $('.top-burger-nav__close').on('click', function () {
 $('.right-burger-nav__item').on('click', function () {
 	$('.right-burger-nav__item').removeClass('_active');
 	$(this).addClass('_active');
-	$('.left-burger-nav__spoiler').removeClass('_active');
-	$('.left-burger-nav__spoiler_' + $(this).attr('id')).addClass('_active');
+	$('.left-burger-nav__spoiler').hide()//.removeClass('_active');
+	$('.left-burger-nav__spoiler_' + $(this).attr('id')).fadeIn(300)//.addClass('_active');
 })
 
 $('.left-burger-nav__name').on('click', function () {
