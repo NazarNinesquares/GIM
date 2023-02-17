@@ -130,10 +130,6 @@ h2 {
   color: #E1E1E1;
 }
 
-h2._big {
-  font-size: 48px;
-}
-
 h3 {
   font-size: 30px;
   font-weight: 700;
@@ -2286,7 +2282,7 @@ h4 {
 
 .faq__title {
   margin-bottom: 70px;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .faq__box._hide .faq__item:not(:nth-child(-n+10)) {
@@ -2624,7 +2620,7 @@ h4 {
 .what-is__main-title {
   text-align: center;
   margin-bottom: 216px;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .what-is__content {
@@ -3391,7 +3387,7 @@ h4 {
 .advantages__title {
   margin-bottom: 80px;
   text-align: center;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .advantages__title_small-m {
@@ -3596,7 +3592,8 @@ h4 {
 
 .form__left,
 .form__right {
-  width: 50%;
+  position: relative;
+  min-width: 50%;
   z-index: 2;
 }
 
@@ -3686,7 +3683,7 @@ h4 {
   margin-bottom: 24px;
 }
 
-.right-form__input span {
+.right-form__input label {
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -3778,7 +3775,7 @@ h4 {
 }
 
 .suitable__title {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 120px;
 }
 
@@ -4024,7 +4021,7 @@ h4 {
 }
 
 .necessary__title {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 197px;
 }
 
@@ -4883,7 +4880,7 @@ h4 {
   }
 
   .trailer__title {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .trailer__subtitle {
@@ -5618,7 +5615,7 @@ h4 {
     margin-bottom: 18px;
   }
 
-  .right-form__input span {
+  .right-form__input label {
     font-size: 11px;
     margin-bottom: 5px;
   }
