@@ -618,7 +618,7 @@ h4 {
 }
 
 ._dark-bg {
-  background: #121212;
+  background: #121314;
 }
 
 .rate {
@@ -2378,7 +2378,7 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 36px;
-  background: #0D0D0D;
+  background: rgba(13, 13, 13, 0.2509803922);
   padding: 147px 80px;
 }
 
