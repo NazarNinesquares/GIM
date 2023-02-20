@@ -431,7 +431,7 @@ h4 {
 .mainscreen-info__text {
   line-height: 1.6;
   margin-bottom: 65px;
-  max-width: 550px;
+  max-width: 565px;
 }
 
 .app-buttons {
@@ -535,8 +535,12 @@ h4 {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: top right;
-     object-position: top right;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.item-steps__ibox_small img {
+  max-width: 250px;
 }
 
 .item-steps__decor {
@@ -2521,7 +2525,7 @@ h4 {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
-  row-gap: 30px;
+  row-gap: 25px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
@@ -2758,9 +2762,9 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 60px;
-     -moz-column-gap: 60px;
-          column-gap: 60px;
+  -webkit-column-gap: 54px;
+     -moz-column-gap: 54px;
+          column-gap: 54px;
   padding-bottom: 200px;
 }
 
@@ -2770,7 +2774,7 @@ h4 {
 }
 
 .create__item {
-  width: calc(33.33% - 48px);
+  width: calc(33.33% - 36px);
 }
 
 .item-create__number {
@@ -2816,7 +2820,7 @@ h4 {
 }
 
 .item-create__text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #A9A8A8;
@@ -4339,7 +4343,8 @@ h4 {
 
   .mainscreen-info__text {
     margin-bottom: 50px;
-    font-size: 13px;
+    font-size: 14px;
+    max-width: 400px;
   }
 
   .app-buttons {
@@ -4362,6 +4367,10 @@ h4 {
         -ms-flex: 0 0 230px;
             flex: 0 0 230px;
     max-height: 210px;
+  }
+
+  .item-steps__ibox_small img {
+    max-width: 190px;
   }
 
   .item-steps__decor {
@@ -4933,12 +4942,11 @@ h4 {
 
   .map-network__info {
     margin-left: 60px;
-    margin-top: -90px;
   }
 
   .map-network__icon {
-    width: 40px;
-    height: 50px;
+    width: 50px;
+    height: 60px;
   }
 
   .map-network__title {
@@ -5071,7 +5079,7 @@ h4 {
   }
 
   .wallets__list {
-    padding: 60px;
+    padding: 60px 35px;
     border-radius: 27px 0 0 27px;
   }
 
@@ -5090,6 +5098,7 @@ h4 {
 
   .list-wallets__list {
     font-size: 14px;
+    row-gap: 20px;
   }
 
   .list-wallets__ibox {
@@ -5183,9 +5192,9 @@ h4 {
   }
 
   .create__cont {
-    -webkit-column-gap: 45px;
-       -moz-column-gap: 45px;
-            column-gap: 45px;
+    -webkit-column-gap: 42px;
+       -moz-column-gap: 42px;
+            column-gap: 42px;
     padding-bottom: 180px;
   }
 
@@ -5194,7 +5203,7 @@ h4 {
   }
 
   .create__item {
-    width: calc(33.33% - 30px);
+    width: calc(33.33% - 28px);
   }
 
   .item-create__number {
@@ -5216,7 +5225,7 @@ h4 {
   }
 
   .item-create__text {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .item-create__list {
@@ -6087,6 +6096,7 @@ h4 {
 
   .mainscreen-info__text {
     margin-bottom: 40px;
+    max-width: 342px;
   }
 
   .item-steps {
@@ -6524,7 +6534,7 @@ h4 {
   }
 
   .network__title {
-    margin-bottom: 85px;
+    margin-bottom: 110px;
     word-wrap: break-word;
   }
 
@@ -6552,6 +6562,7 @@ h4 {
 
   .map-network__info {
     margin-left: 0;
+    margin-top: -90px;
   }
 
   .map-network__title {
@@ -6669,6 +6680,7 @@ h4 {
 
   .list-wallets__list {
     font-size: 18px;
+    row-gap: 25px;
   }
 
   .list-wallets__list._hide .list-wallets__item:not(:nth-child(-n+8)) {
