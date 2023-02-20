@@ -3754,8 +3754,7 @@ h4 {
 }
 
 .web__ibox {
-  width: 600px;
-  height: 600px;
+  width: 900px;
   margin: 0 auto 10px;
 }
 
@@ -5664,8 +5663,7 @@ h4 {
   }
 
   .web__ibox {
-    width: 500px;
-    height: 500px;
+    width: 690px;
   }
 
   .web__text {
@@ -7158,10 +7156,11 @@ h4 {
   .web__ibox {
     width: 320px;
     height: 320px;
+    margin: 70px auto;
   }
 
   .web__ibox img {
-    width: 197%;
+    width: 215%;
     height: auto;
     position: relative;
     top: -55%;
