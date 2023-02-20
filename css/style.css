@@ -361,9 +361,10 @@ h4 {
 }
 
 .mainscreen__decor_brown {
-  background: rgba(54, 54, 54, 0.38);
-  -webkit-filter: blur(292.07px);
-          filter: blur(292.07px);
+  background: rgba(84, 60, 46, 0.38);
+  -webkit-filter: blur(219.053px);
+          filter: blur(219.053px);
+  opacity: 1;
 }
 
 .mainscreen._scroll {
@@ -2379,7 +2380,7 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 36px;
-  background: rgba(13, 13, 13, 0.2509803922);
+  background: #121314;
   padding: 147px 80px;
 }
 
@@ -4943,6 +4944,7 @@ h4 {
 
   .map-network__info {
     margin-left: 60px;
+    max-width: 344px;
   }
 
   .map-network__icon {
@@ -5015,7 +5017,7 @@ h4 {
 
   .faq__title {
     margin-bottom: 50px;
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .faq__item {
@@ -6057,7 +6059,7 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 300px;
+    max-width: 385px;
     margin: 0 auto 70px;
   }
 
@@ -6097,6 +6099,10 @@ h4 {
   .mainscreen-info__text {
     margin-bottom: 40px;
     max-width: 342px;
+  }
+
+  .mainscreen-info__buttons {
+    margin: 0;
   }
 
   .item-steps {
@@ -6150,6 +6156,11 @@ h4 {
 
   .btn {
     font-size: 14px;
+  }
+
+  .btn_small {
+    min-width: 120px;
+    padding: 10px 5px;
   }
 
   .notice {
@@ -6579,7 +6590,7 @@ h4 {
 
   .map-network__info {
     margin-left: 0;
-    margin-top: -90px;
+    margin: -90px auto 0;
   }
 
   .map-network__title {
