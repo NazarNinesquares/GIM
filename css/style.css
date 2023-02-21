@@ -1574,13 +1574,14 @@ h4 {
 }
 
 .top-footer__left {
-  margin-right: 115px;
+  margin-right: 110px;
 }
 
 .top-footer__logo {
   display: block;
   width: 170px;
   margin-bottom: 16px;
+  margin-left: -15px;
 }
 
 .top-footer__logo img {
@@ -4675,11 +4676,12 @@ h4 {
   }
 
   .top-footer__left {
-    margin-right: 50px;
+    margin-right: 80px;
   }
 
   .top-footer__logo {
     width: 130px;
+    margin-left: -10px;
   }
 
   .top-footer__icons {
@@ -6030,6 +6032,12 @@ h4 {
     min-height: 36px;
     min-width: 75px;
     font-size: 10px;
+  }
+}
+
+@media (max-width: 870px) {
+  .top-footer__left {
+    margin-right: calc(50px + 30 * (100vw - 769px) / 101);
   }
 }
 
