@@ -1,7 +1,9 @@
 $( document ).ready(function() {
 
 $('.item-faq__question').on('click', function () {
+	$('.item-faq__question').removeClass('_active');
 	$(this).toggleClass('_active');
+	$('.item-faq__answer').slideUp();
 	$(this).next('.item-faq__answer').slideToggle();
 })
 
