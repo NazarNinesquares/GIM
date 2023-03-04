@@ -3529,6 +3529,10 @@ h4 {
           flex: 0 0 225px;
 }
 
+.item-advantages__ibox_normal {
+  padding-right: 50px;
+}
+
 .item-advantages__ibox img {
   width: 100%;
   height: 100%;
@@ -5562,6 +5566,10 @@ h4 {
     height: 279px;
   }
 
+  .item-advantages__ibox_normal {
+    padding-right: 37px;
+  }
+
   .why__cont {
     gap: 18px;
     margin-bottom: 165px;
@@ -6440,8 +6448,9 @@ h4 {
   }
 
   .top-footer__icons {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .top-footer__icons a {
@@ -7095,7 +7104,7 @@ h4 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    max-width: 400px;
+    max-width: 345px;
     margin: 0 auto;
     -webkit-transform: translateX(15px);
         -ms-transform: translateX(15px);
@@ -7112,9 +7121,10 @@ h4 {
   }
 
   .item-advantages__ibox_normal {
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateX(21px);
+        -ms-transform: translateX(21px);
+            transform: translateX(21px);
+    padding-right: 46px;
   }
 
   .item-advantages__title {
