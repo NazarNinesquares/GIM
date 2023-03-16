@@ -2341,6 +2341,8 @@ h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  -moz-text-align-last: left;
+       text-align-last: left;
   margin-bottom: 40px;
   padding-right: 40px;
   color: #fff;
