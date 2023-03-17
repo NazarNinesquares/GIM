@@ -1,8 +1,19 @@
-let project_folder = "_compile";
+// Папка з вихідним кодом
+let project_folder = "_dist";
+
+// Папка з робочим кодом
 let source_folder = "_src";
+
+// Папка для GitHub Pages
+let github_folder = "docs";
+
+// Файл який читає browser-sync за замовчуванням
 let file_sync = "index.html";
 
+// Змінна із списком шляхів файлів
 let path = {
+
+	// Список зкомпільованих папок/файлів
 	build: {
 		html: project_folder + "/",
 		css: project_folder + "/css/",
@@ -11,7 +22,9 @@ let path = {
 		images: project_folder + "/img/",
 		// icons: project_folder + "/ico/",
 		service: project_folder + "/service/",
+		docs: project_folder + "/docs/",
 	},
+	// Список робочих папок/файлів
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
 		css: source_folder + "/scss/style.scss",
@@ -20,7 +33,20 @@ let path = {
 		images: source_folder + "/img/**/**",
 		// icons: source_folder + "/ico/*",
 		service: source_folder + "/service/**/**",
+		docs: source_folder + "/docs/*",
 	},
+	// Список робочих папок/файлів
+	docs: {
+		html: github_folder + "/",
+		css: github_folder + "/css/",
+		js: github_folder + "/js/",
+		fonts: github_folder + "/fonts/",
+		images: github_folder + "/img/",
+		// icons: github_folder + "/ico/",
+		service: github_folder + "/service/",
+		docs: github_folder + "/docs/",
+	},
+	// Список папок/файлів, за якими GULP постійно слідкує
 	watch: {
 		html: source_folder + "/*.html",
 		css: source_folder + "/scss/**/*.scss",
@@ -28,9 +54,14 @@ let path = {
 		images: source_folder + "/img/**/**",
 		// icons: source_folder + "/ico/*",
 	},
-	clean: "./" + project_folder + "/"
+	// Коренева папка вихідних папок/файлів, яку GULP очищає при запуску
+	clean: {
+		dist: "./" + project_folder + "/",
+		docs: "./" + github_folder + "/",
+	}
 }
 
+// Список плагінів
 let {src, dest} = require('gulp'),
 	gulp = require('gulp'),
 	fileInclude = require('gulp-file-include'),
@@ -60,6 +91,7 @@ function html() {
 	return src(path.src.html)
 	.pipe(fileInclude())
 	.pipe(dest(path.build.html))
+	.pipe(dest(path.docs.html))
 	.pipe(browser_sync.stream())
 }
 
@@ -74,11 +106,13 @@ function css() {
 		cascade: true
 	}))
 	.pipe(dest(path.build.css))
+	// .pipe(dest(path.docs.css))
 	.pipe(clean_css({level: { 2: { specialComments: 0 } } }))
 	.pipe(rename({
 		extname: '.min.css'
 	}))
 	.pipe(dest(path.build.css))
+	.pipe(dest(path.docs.css))
 	.pipe(browser_sync.stream())
 }
 
@@ -86,6 +120,7 @@ function js() {
 	return src(path.src.js)
 	.pipe(fileInclude())
 	.pipe(dest(path.build.js))
+	// .pipe(dest(path.docs.js))
 	.pipe(uglify({
 		toplevel: true
 	}))
@@ -93,29 +128,34 @@ function js() {
 		extname: '.min.js'
 	}))
 	.pipe(dest(path.build.js))
+	.pipe(dest(path.docs.js))
 	.pipe(browser_sync.stream())
 }
 
 function fonts() {
 	return src(path.src.fonts)
 	.pipe(dest(path.build.fonts))
+	.pipe(dest(path.docs.fonts))
 }
 
 function images() {
 	return src(path.src.images)
 	.pipe(dest(path.build.images))
+	.pipe(dest(path.docs.images))
 	.pipe(browser_sync.stream())
 }
 
 // function icons() {
 // 	return src(path.src.icons)
 // 	.pipe(dest(path.build.icons))
+// 	.pipe(dest(path.docs.icons))
 // 	.pipe(browser_sync.stream())
 // }
 
 function service() {
 	return src(path.src.service)
 	.pipe(dest(path.build.service))
+	.pipe(dest(path.docs.service))
 }
 
 function watchFiles() {
@@ -127,7 +167,7 @@ function watchFiles() {
 }
 
 function clean () {
-	return del(path.clean);
+	return del(path.clean.dist), del(path.clean.docs);
 }
 
 let build = gulp.series(clean, gulp.parallel(js, css, html), images, /*icons,*/ fonts, service, browserSync);
