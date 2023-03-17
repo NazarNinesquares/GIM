@@ -200,7 +200,7 @@ h4 {
 
 	&__img {
 		position: relative;
-		flex: 1 1 auto;
+		flex: 1 1 36%;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
@@ -313,6 +313,83 @@ h4 {
 		line-height: 1.6;
 		margin-bottom: 65px;
 		max-width: 565px;
+	}
+}
+
+.ibox-mainscreen {
+	position: relative;
+	width: 100%;
+	padding-bottom: 90%;
+
+	// .ibox-mainscreen_buy
+	&_buy {
+
+		.ibox-mainscreen__candle-img_up,
+		.ibox-mainscreen__arrow-img_down {
+			display: block;
+		}
+		
+		.ibox-mainscreen__candle-img_down,
+		.ibox-mainscreen__arrow-img_up {
+			display: none;
+		}
+	}
+
+	// .ibox-mainscreen_sell
+	&_sell {
+
+		.ibox-mainscreen__candle-img_down,
+		.ibox-mainscreen__arrow-img_up {
+			display: block;
+		}
+		
+		.ibox-mainscreen__candle-img_up,
+		.ibox-mainscreen__arrow-img_down {
+			display: none;
+		}
+	}
+
+	// .ibox-mainscreen__candle
+	&__candle {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	// .ibox-mainscreen__candle-img
+	&__candle-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	// .ibox-mainscreen__coin
+	&__coin {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 130%;
+		height: 130%;
+		z-index: 2;
+	}
+
+	// .ibox-mainscreen__arrow
+	&__arrow {
+		position: absolute;
+		top: 19%;
+		left: 3%;
+		width: 64px;
+		height: 76px;
+	}
+
+	// .ibox-mainscreen__arrow-img
+	&__arrow-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 
@@ -495,7 +572,7 @@ h4 {
 
 	&_pos {
 		top: 30%;
-		right: 0%;
+		right: -5%;
 		border-radius: 16px 16px 16px 4px;
 	}
 
@@ -648,6 +725,15 @@ h4 {
 		}
 	}
 
+	.ibox-mainscreen {
+	
+		// .ibox-mainscreen__arrow
+		&__arrow {
+			width: 45px;
+			height: 53px;
+		}
+	}
+
 	.app-buttons {
 		width: 290px;
 		height: 46px;
@@ -780,8 +866,8 @@ h4 {
 		border-radius: 3px 13px 13px 13px;
 
 		&_pos {
-			top: 35%;
-			right: 0%;
+			top: 29%;
+			right: -7%;
 			border-radius: 13px 13px 13px 3px;
 		}
 
@@ -832,6 +918,7 @@ h4 {
 
 		&__img {
 			justify-content: center;
+			width: 100%;
 			max-width: 385px;
 			margin: 0 auto 70px;
 
@@ -877,6 +964,15 @@ h4 {
 
 		&__buttons {
 			margin: 0;
+		}
+	}
+
+	.ibox-mainscreen {
+	
+		// .ibox-mainscreen__arrow
+		&__arrow {
+			width: 64px;
+			height: 76px;
 		}
 	}
 
@@ -991,21 +1087,8 @@ h4 {
 	.rate {
 
 		&_pos {
-			right: -3%;
-		}
-
-		&__value {
-			font-size: 14px;
-			max-width: 70px;
-		}
-
-		&__percent {
-			font-size: 11px;
-			padding-left: 10px;
-
-			&::before {
-				border-width: 0 3px 4px 3px;
-			}
+			top: 34%;
+			right: 1%;
 		}
 	}
 }
