@@ -399,26 +399,6 @@ h4 {
   padding-bottom: 90%;
 }
 
-.ibox-mainscreen_buy .ibox-mainscreen__candle-img_up,
-.ibox-mainscreen_buy .ibox-mainscreen__arrow-img_down {
-  display: block;
-}
-
-.ibox-mainscreen_buy .ibox-mainscreen__candle-img_down,
-.ibox-mainscreen_buy .ibox-mainscreen__arrow-img_up {
-  display: none;
-}
-
-.ibox-mainscreen_sell .ibox-mainscreen__candle-img_down,
-.ibox-mainscreen_sell .ibox-mainscreen__arrow-img_up {
-  display: block;
-}
-
-.ibox-mainscreen_sell .ibox-mainscreen__candle-img_up,
-.ibox-mainscreen_sell .ibox-mainscreen__arrow-img_down {
-  display: none;
-}
-
 .ibox-mainscreen__candle {
   position: absolute;
   top: 0;

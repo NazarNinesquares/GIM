@@ -309,32 +309,32 @@ h4 {
 	padding-bottom: 90%;
 
 	// .ibox-mainscreen_buy
-	&_buy {
+	// &_buy {
 
-		.ibox-mainscreen__candle-img_up,
-		.ibox-mainscreen__arrow-img_down {
-			display: block;
-		}
+	// 	.ibox-mainscreen__candle-img_up,
+	// 	.ibox-mainscreen__arrow-img_down {
+	// 		display: block;
+	// 	}
 		
-		.ibox-mainscreen__candle-img_down,
-		.ibox-mainscreen__arrow-img_up {
-			display: none;
-		}
-	}
+	// 	.ibox-mainscreen__candle-img_down,
+	// 	.ibox-mainscreen__arrow-img_up {
+	// 		display: none;
+	// 	}
+	// }
 
 	// .ibox-mainscreen_sell
-	&_sell {
+	// &_sell {
 
-		.ibox-mainscreen__candle-img_down,
-		.ibox-mainscreen__arrow-img_up {
-			display: block;
-		}
+	// 	.ibox-mainscreen__candle-img_down,
+	// 	.ibox-mainscreen__arrow-img_up {
+	// 		display: block;
+	// 	}
 		
-		.ibox-mainscreen__candle-img_up,
-		.ibox-mainscreen__arrow-img_down {
-			display: none;
-		}
-	}
+	// 	.ibox-mainscreen__candle-img_up,
+	// 	.ibox-mainscreen__arrow-img_down {
+	// 		display: none;
+	// 	}
+	// }
 
 	// .ibox-mainscreen__candle
 	&__candle {
