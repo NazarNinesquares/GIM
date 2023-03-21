@@ -111,17 +111,13 @@ h4 {
 	}
 }
 
-.decor {
-	position: absolute;
-	background: #FFFFFF;
-	opacity: 0.16;
-	filter: blur(129.72px);
-	border-radius: 50%;
-	// background: radial-gradient(42.99% 42.99% at 30.18% 57.01%, #FFFFFF 0%, #FFD18B 0.01%, rgba(255, 184, 139, 0.895336) 0.02%, rgba(255, 139, 139, 0.7) 75.52%);
-	// mix-blend-mode: luminosity;
-	// opacity: 0.3;
-	// filter: blur(129.72px);
-}
+// .decor {
+// 	position: absolute;
+// 	background: #FFFFFF;
+// 	opacity: 0.16;
+// 	filter: blur(129.72px);
+// 	border-radius: 50%;
+// }
 
 .btn {
 	position: relative;
@@ -206,22 +202,13 @@ h4 {
 		align-items: center;
 		max-width: 515px;
 
-		&_medium {
-			max-height: 470px;
-		}
+		// &_medium {
+		// 	max-height: 470px;
+		// }
 
-		&_small {
-			max-height: 350px;
-		}
-
-		&_rate {
-			padding-right: 30px;
-		}
-
-		&_partnership {
-			align-items: flex-start;
-			margin-top: -16%;
-		}
+		// &_rate {
+		// 	padding-right: 30px;
+		// }
 
 		& img {
 			position: relative;
@@ -238,26 +225,26 @@ h4 {
 		}
 	}
 
-	&__decor {
-		top: -14%;
-		left: -4%;
-		width: 130%;
-		height: 130%;
+	// &__decor {
+	// 	top: -14%;
+	// 	left: -4%;
+	// 	width: 130%;
+	// 	height: 130%;
 
-		&_green {
-			// background: rgba(61, 225, 157, 0.16);
-			background: rgba(61,225,157,.14);
-			mix-blend-mode: normal;
-			opacity: 1;
-			filter: blur(292.07px);
-		}
+	// 	&_green {
+	// 		// background: rgba(61, 225, 157, 0.16);
+	// 		background: rgba(61,225,157,.14);
+	// 		mix-blend-mode: normal;
+	// 		opacity: 1;
+	// 		filter: blur(292.07px);
+	// 	}
 
-		&_brown {
-			background: rgba(84, 60, 46, 0.38);
-			filter: blur(219.053px);
-			opacity: 1;
-		}
-	}
+	// 	&_brown {
+	// 		background: rgba(84, 60, 46, 0.38);
+	// 		filter: blur(219.053px);
+	// 		opacity: 1;
+	// 	}
+	// }
 
 	&._scroll {
 		padding-top: 143px;
@@ -557,24 +544,24 @@ h4 {
 }
 
 .rate {
-	position: absolute;
-	top: 46%;
-	right: -6%;
-	border: 1px solid;
-	border-image-source: linear-gradient(227.92deg, rgba(255, 140, 0, 0.08) 11.74%, rgba(240, 131, 0, 0) 76.48%);
-	background: #FF8C0010;
-	background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 0%, rgba(45, 45, 45, 0.2) 100%), rgba(255, 140, 0, 0.1);
-	box-shadow: inset 0px 1.8374px 10.1057px rgba(255, 140, 0, 0.08);
-	backdrop-filter: blur(11.0244px);
-	padding: 13px 20px;
-	border-radius: 4px 16px 16px 16px;
-	z-index: 3;
+	// position: absolute;
+	// top: 46%;
+	// right: -6%;
+	// border: 1px solid;
+	// border-image-source: linear-gradient(227.92deg, rgba(255, 140, 0, 0.08) 11.74%, rgba(240, 131, 0, 0) 76.48%);
+	// background: #FF8C0010;
+	// background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 0%, rgba(45, 45, 45, 0.2) 100%), rgba(255, 140, 0, 0.1);
+	// box-shadow: inset 0px 1.8374px 10.1057px rgba(255, 140, 0, 0.08);
+	// backdrop-filter: blur(11.0244px);
+	// padding: 13px 20px;
+	// border-radius: 4px 16px 16px 16px;
+	// z-index: 3;
 
-	&_pos {
-		top: 30%;
-		right: -5%;
-		border-radius: 16px 16px 16px 4px;
-	}
+	// &_pos {
+	// 	top: 30%;
+	// 	right: -5%;
+	// 	border-radius: 16px 16px 16px 4px;
+	// }
 
 	&__value {
 		font-size: 22px;
@@ -681,15 +668,15 @@ h4 {
 			left: -11%;
 			width: 125%;
 			height: 126%;
-			filter: blur(56.5012px);
+			// filter: blur(56.5012px);
 
-			&_green {
-				filter: blur(220.687px);
-			}
+			// &_green {
+			// 	filter: blur(220.687px);
+			// }
 
-			&_brown {
-				filter: blur(292.07px);
-			}
+			// &_brown {
+			// 	filter: blur(292.07px);
+			// }
 		}
 	}
 
@@ -861,15 +848,15 @@ h4 {
 	}
 
 	.rate {
-		right: -5%;
-		padding: 10px 13px;
-		border-radius: 3px 13px 13px 13px;
+		// right: -5%;
+		// padding: 10px 13px;
+		// border-radius: 3px 13px 13px 13px;
 
-		&_pos {
-			top: 29%;
-			right: -7%;
-			border-radius: 13px 13px 13px 3px;
-		}
+		// &_pos {
+		// 	top: 29%;
+		// 	right: -7%;
+		// 	border-radius: 13px 13px 13px 3px;
+		// }
 
 		&__value {
 			font-size: 17px;
@@ -1084,13 +1071,13 @@ h4 {
 		}
 	}
 
-	.rate {
+	// .rate {
 
-		&_pos {
-			top: 34%;
-			right: 1%;
-		}
-	}
+	// 	&_pos {
+	// 		top: 34%;
+	// 		right: 1%;
+	// 	}
+	// }
 }
 
 @media (max-width: 425px) {
@@ -7412,6 +7399,121 @@ h4 {
 
 		&__coment {
 			font-size: 16px;
+		}
+	}
+}
+
+//< ========================================================== >\\
+
+.mainscreen__decor {
+	position: absolute;
+	top: -14%;
+	left: -4%;
+	width: 130%;
+	height: 130%;
+	border-radius: 50%;
+}
+
+.rate {
+	position: absolute;
+	border: 1px solid;
+	border-image-source: linear-gradient(227.92deg, rgba(255, 140, 0, 0.08) 11.74%, rgba(240, 131, 0, 0) 76.48%);
+	background: #FF8C0010;
+	background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 0%, rgba(45, 45, 45, 0.2) 100%), rgba(255, 140, 0, 0.1);
+	box-shadow: inset 0px 1.8374px 10.1057px rgba(255, 140, 0, 0.08);
+	backdrop-filter: blur(11.0244px);
+	padding: 13px 20px;
+	z-index: 3;
+}
+
+@mixin mainscreen-decor($background, $filter, $opacity:1) {
+
+	.mainscreen__decor {
+		background: $background;
+		opacity: $opacity;
+		filter: $filter;
+	}
+}
+
+@mixin mainscreen-rate($top, $right, $border-radius) {
+
+	.mainscreen__rate {
+		top: $top;
+		right: $right;
+		border-radius: $border-radius;
+	}
+}
+
+.mainscreen {
+
+	&.main-page {
+		@include mainscreen-decor(#fff, blur(129.72px), 0.16);
+	}
+
+	&.wallet-page,
+	&.sell-page,
+	&.sell-bitcoin-page,
+	&.buy-bitcoin-page,
+	&.buy-page {
+		@include mainscreen-decor(#543c2e61, blur(219.053px));
+	}
+
+	&.exchange-page,
+	&.partnership-page,
+	&.affiliate-page {
+		@include mainscreen-decor(#3de19d24, blur(292.07px));
+	}
+
+	&.wallet-page {
+		@include mainscreen-rate(46%, -6%, 4px 16px 16px 16px);
+	}
+
+	&.sell-bitcoin-page,
+	&.buy-bitcoin-page {
+		@include mainscreen-rate(30%, -5%, 16px 16px 16px 4px);
+	}
+}
+
+@media (max-width: 1440px) {
+
+	.mainscreen {
+
+		&.main-page {
+			@include mainscreen-decor(#fff, blur(56.5012px), 0.16);
+		}
+	
+		&.wallet-page,
+		&.sell-page,
+		&.sell-bitcoin-page,
+		&.buy-bitcoin-page,
+		&.buy-page {
+			@include mainscreen-decor(#543c2e61, blur(292.07px));
+		}
+	
+		&.exchange-page,
+		&.partnership-page,
+		&.affiliate-page {
+			@include mainscreen-decor(#3de19d24, blur(220.687px));
+		}
+	
+		&.wallet-page {
+			@include mainscreen-rate(46%, -5%, 3px 13px 13px 13px);
+		}
+	
+		&.sell-bitcoin-page,
+		&.buy-bitcoin-page {
+			@include mainscreen-rate(29%, -7%, 13px 13px 13px 3px);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+
+	.mainscreen {
+	
+		&.sell-bitcoin-page,
+		&.buy-bitcoin-page {
+			@include mainscreen-rate(34%, 1%, 13px 13px 13px 3px);
 		}
 	}
 }

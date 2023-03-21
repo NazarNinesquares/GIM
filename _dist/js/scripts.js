@@ -150,7 +150,7 @@ $(document).ready(function () {
         }, 500);
     })
 
-    $("header .main-nav__menu li").click(function(event) {
+    $("header .main-nav__menu li, , footer .right-footer__list li").click(function(event) {
         let target = $(this).find('a').attr('href');
         if (target.startsWith('#')) {
             event.preventDefault();
