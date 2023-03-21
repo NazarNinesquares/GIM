@@ -7269,7 +7269,7 @@ h4 {
 		position: relative;
 		max-width: 905px;
 		margin: 0 auto;
-		padding: 100px 15px;
+		padding: 100px 15px 200px;
 	}
 
 	&__logo {
@@ -7329,6 +7329,27 @@ h4 {
 		font-weight: 400;
 		line-height: 1.6;
 		color: #629B6E;
+		margin-bottom: 60px;
+	}
+
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.6;
+		width: 245px;
+		min-height: 60px;
+		border: 2px solid #525252;
+		color: #D4C9C8;
+		border-radius: 16px;
+		transition: all linear 0.2s;
+
+		&:hover {
+			border-color: #3DE19D;
+			color: #3DE19D;
+		}
 	}
 }
 
@@ -7338,7 +7359,7 @@ h4 {
 
 		&__cont {
 			max-width: 657px;
-			padding: 75px 15px;
+			padding: 75px 15px 150px;
 		}
 
 		&__logo {
@@ -7362,6 +7383,13 @@ h4 {
 
 		&__coment {
 			font-size: 14px;
+			margin-bottom: 40px;
+		}
+
+		&__link {
+			font-size: 14px;
+			width: 180px;
+			min-height: 45px;
 		}
 	}
 }
@@ -7372,7 +7400,7 @@ h4 {
 
 		&__cont {
 			max-width: 657px;
-			padding: 10px 15px 0;
+			padding: 10px 15px 80px;
 			margin-bottom: 130px;
 		}
 
@@ -7399,6 +7427,7 @@ h4 {
 
 		&__coment {
 			font-size: 16px;
+			margin-bottom: 30px;
 		}
 	}
 }
