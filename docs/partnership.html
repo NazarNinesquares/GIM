@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/home/header/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="service/intlTelInput.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>GIM - Partnership</title>
 </head>
@@ -532,7 +533,7 @@
 						</div>
 						<div class="right-form__input">
 							<label>Телефон *</label>
-							<input type="tel" name="phone" placeholder="Type...">
+							<input type="tel" name="phone" id="phone" placeholder="Type...">
 						</div>
 						<div class="right-form__input right-form__input_doble">
 							<div>
@@ -845,7 +846,14 @@
 	};
 </script>
 	<script src="service/jquery.js"></script>
+	<script src="service/intlTelInput.min.js"></script>
 	<script src="js/scripts.min.js"></script>
+	<script>
+		const phoneInputField = document.querySelector("#phone");
+		const phoneInput = window.intlTelInput(phoneInputField, {
+			utilsScript:"https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+		});
+	</script>
 </body>
 
 </html>
