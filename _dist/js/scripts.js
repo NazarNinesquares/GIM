@@ -1,5 +1,12 @@
 var $ = jQuery;
 $(document).ready(function () {
+
+	if($('.main-nav').data('cryptocurrency')) {
+		
+		let curent_text = $('.main-nav__menu li:nth-child(2) a').text()
+		$('.main-nav__menu li:nth-child(2) a').text($('.main-nav').data('cryptocurrency') + '-' + curent_text)
+	}
+
     $('.item-faq__question').on('click', function () {
         if ($(this).hasClass('_active')) {
             $(this).removeClass('_active');
