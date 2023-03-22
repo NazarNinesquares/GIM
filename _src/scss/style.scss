@@ -111,13 +111,13 @@ h4 {
 	}
 }
 
-// .decor {
-// 	position: absolute;
-// 	background: #FFFFFF;
-// 	opacity: 0.16;
-// 	filter: blur(129.72px);
-// 	border-radius: 50%;
-// }
+.decor {
+	position: absolute;
+	background: #FFFFFF;
+	opacity: 0.16;
+	filter: blur(129.72px);
+	border-radius: 50%;
+}
 
 .btn {
 	position: relative;
@@ -3529,7 +3529,8 @@ h4 {
 
 	&__cont {
 		text-align: center;
-		margin-bottom: 300px;
+		padding-top: 50px;
+		padding-bottom: 300px;
 	}
 
 	&__title {
@@ -3625,7 +3626,7 @@ h4 {
 	.faq {
 
 		&__cont {
-			margin-bottom: 225px;
+			padding-bottom: 225px;
 		}
 
 		&__title {
@@ -3663,7 +3664,8 @@ h4 {
 	.faq {
 
 		&__cont {
-			margin-bottom: 120px;
+			padding-top: 30px;
+			padding-bottom: 120px;
 		}
 
 		&__show {
