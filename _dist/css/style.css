@@ -638,11 +638,7 @@ h4 {
   font-weight: 700;
   line-height: 1.3;
   color: #E1E1E1;
-  max-width: 135px;
   white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
 }
 
 .rate__percent {
@@ -3736,7 +3732,7 @@ h4 {
 }
 
 .right-form__input textarea {
-  min-height: 180px;
+  height: 180px;
 }
 
 .right-form__input input[type=submit] {
@@ -4342,14 +4338,14 @@ h4 {
 
 .mainscreen.wallet-page .mainscreen__rate {
   top: 46%;
-  right: -6%;
+  left: 82%;
   border-radius: 4px 16px 16px 16px;
 }
 
 .mainscreen.sell-bitcoin-page .mainscreen__rate,
 .mainscreen.buy-bitcoin-page .mainscreen__rate {
   top: 30%;
-  right: -5%;
+  left: 67%;
   border-radius: 16px 16px 16px 4px;
 }
 
@@ -4590,7 +4586,6 @@ h4 {
 
   .rate__value {
     font-size: 17px;
-    max-width: 80px;
   }
 
   .rate__percent {
@@ -5754,7 +5749,7 @@ h4 {
   }
 
   .right-form__input textarea {
-    min-height: 120px;
+    height: 120px;
   }
 
   .right-form__input input[type=submit] {
@@ -6061,15 +6056,37 @@ h4 {
 
   .mainscreen.wallet-page .mainscreen__rate {
     top: 46%;
-    right: -5%;
+    left: 67%;
     border-radius: 3px 13px 13px 13px;
   }
 
   .mainscreen.sell-bitcoin-page .mainscreen__rate,
   .mainscreen.buy-bitcoin-page .mainscreen__rate {
-    top: 29%;
-    right: -7%;
+    top: 26%;
+    left: 68%;
     border-radius: 13px 13px 13px 3px;
+  }
+}
+
+@media (max-width: 992px) {
+  .rate {
+    bottom: 5%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .mainscreen.sell-bitcoin-page .mainscreen__rate,
+  .mainscreen.buy-bitcoin-page .mainscreen__rate {
+    top: auto;
+    left: 50%;
+    border-radius: 13px;
+  }
+
+  .mainscreen.wallet-page .mainscreen__rate {
+    top: auto;
+    left: 58%;
+    border-radius: 13px;
   }
 }
 
@@ -7345,7 +7362,7 @@ h4 {
   }
 
   .right-form__input textarea {
-    min-height: 120px;
+    height: 120px;
   }
 
   .right-form__input input[type=submit] {
@@ -7537,13 +7554,6 @@ h4 {
   .mistake__coment {
     font-size: 16px;
     margin-bottom: 30px;
-  }
-
-  .mainscreen.sell-bitcoin-page .mainscreen__rate,
-  .mainscreen.buy-bitcoin-page .mainscreen__rate {
-    top: 34%;
-    right: 1%;
-    border-radius: 13px 13px 13px 3px;
   }
 }
 

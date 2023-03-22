@@ -568,10 +568,10 @@ h4 {
 		font-weight: 700;
 		line-height: 1.3;
 		color: #E1E1E1;
-		max-width: 135px;
+		// max-width: 135px;
 		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
 	}
 
 	&__percent {
@@ -860,7 +860,7 @@ h4 {
 
 		&__value {
 			font-size: 17px;
-			max-width: 80px;
+			// max-width: 80px;
 		}
 
 		&__percent {
@@ -871,6 +871,14 @@ h4 {
 				border-width: 0 4px 5px 4px;
 			}
 		}
+	}
+}
+
+@media (max-width: 992px) {
+
+	.rate {
+		bottom: 5%;
+		transform: translateX(-50%);
 	}
 }
 
@@ -6104,7 +6112,7 @@ h4 {
 		}
 
 		& textarea {
-			min-height: 180px;
+			height: 180px;
 		}
 
 		& input[type = submit] {
@@ -6211,7 +6219,7 @@ h4 {
 			}
 
 			& textarea {
-				min-height: 120px;
+				height: 120px;
 			}
 
 			& input[type = submit] {
@@ -6293,7 +6301,7 @@ h4 {
 			}
 
 			& textarea {
-				min-height: 120px;
+				height: 120px;
 			}
 
 			& input[type = submit] {
@@ -7464,11 +7472,11 @@ h4 {
 	}
 }
 
-@mixin mainscreen-rate($top, $right, $border-radius) {
+@mixin mainscreen-rate($top, $left, $border-radius) {
 
 	.mainscreen__rate {
 		top: $top;
-		right: $right;
+		left: $left;
 		border-radius: $border-radius;
 	}
 }
@@ -7494,12 +7502,12 @@ h4 {
 	}
 
 	&.wallet-page {
-		@include mainscreen-rate(46%, -6%, 4px 16px 16px 16px);
+		@include mainscreen-rate(46%, 82%, 4px 16px 16px 16px);
 	}
 
 	&.sell-bitcoin-page,
 	&.buy-bitcoin-page {
-		@include mainscreen-rate(30%, -5%, 16px 16px 16px 4px);
+		@include mainscreen-rate(30%, 67%, 16px 16px 16px 4px);
 	}
 }
 
@@ -7526,23 +7534,38 @@ h4 {
 		}
 	
 		&.wallet-page {
-			@include mainscreen-rate(46%, -5%, 3px 13px 13px 13px);
+			@include mainscreen-rate(46%, 67%, 3px 13px 13px 13px);
 		}
 	
 		&.sell-bitcoin-page,
 		&.buy-bitcoin-page {
-			@include mainscreen-rate(29%, -7%, 13px 13px 13px 3px);
+			@include mainscreen-rate(26%, 68%, 13px 13px 13px 3px);
 		}
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
 	.mainscreen {
 	
 		&.sell-bitcoin-page,
 		&.buy-bitcoin-page {
-			@include mainscreen-rate(34%, 1%, 13px 13px 13px 3px);
+			@include mainscreen-rate(auto, 50%, 13px);
+		}
+	
+		&.wallet-page {
+			@include mainscreen-rate(auto, 58%, 13px);
 		}
 	}
 }
+
+// @media (max-width: 768px) {
+
+// 	.mainscreen {
+	
+// 		&.sell-bitcoin-page,
+// 		&.buy-bitcoin-page {
+// 			@include mainscreen-rate(34%, 1%, 13px 13px 13px 3px);
+// 		}
+// 	}
+// }
