@@ -2,7 +2,7 @@ var $ = jQuery;
 $(document).ready(function () {
 
 	if($('.main-nav').data('cryptocurrency')) {
-		
+
 		let curent_text = $('.main-nav__menu li:nth-child(2) a').text()
 		$('.main-nav__menu li:nth-child(2) a').text($('.main-nav').data('cryptocurrency') + '-' + curent_text)
 	}
@@ -161,7 +161,8 @@ $(document).ready(function () {
         let target = $(this).find('a').attr('href');
         if (target.startsWith('#')) {
             event.preventDefault();
-            if ($('body').hasClass('home')) {
+            console.log(target, $(target))
+            if ($(target)) {
                 sctTo(target);
             } else {
                 localStorage.setItem('target', target);
