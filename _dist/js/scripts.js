@@ -161,8 +161,8 @@ $(document).ready(function () {
         let target = $(this).find('a').attr('href');
         if (target.startsWith('#')) {
             event.preventDefault();
-            console.log(target, $(target))
-            if ($(target)) {
+
+            if ($(target).length) {
                 sctTo(target);
             } else {
                 localStorage.setItem('target', target);
