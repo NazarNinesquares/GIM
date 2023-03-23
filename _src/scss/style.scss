@@ -608,6 +608,13 @@ h4 {
 	}
 }
 
+//< ==================================================== >\\
+
+iframe[name='helpcrunch-iframe'] {
+	z-index: 100!important;
+}
+
+
 
 @media (max-width: 1440px) {
 
@@ -3574,7 +3581,7 @@ h4 {
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 32px;
-		text-align-last: left;
+		text-align: left;
 		margin-bottom: 40px;
 		padding-right: 40px;
 		color: #fff;
