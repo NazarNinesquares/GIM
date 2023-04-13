@@ -1772,6 +1772,7 @@ iframe[name='helpcrunch-iframe'] {
 		&__spoiler._active {
 
 			.left-burger-nav__name {
+				display: block;
 				background: #E1E1E14D;
 				border-left: 4px solid #e1e1e1;
 
@@ -2790,7 +2791,7 @@ iframe[name='helpcrunch-iframe'] {
 		width: calc(50% - 15px);
 		border-radius: 24px;
 		background: #1f2125;
-		padding: 70px 80px;
+		padding: 70px 65px;
 	}
 
 	&__ibox {
@@ -2810,7 +2811,7 @@ iframe[name='helpcrunch-iframe'] {
 	}
 
 	&__title {
-		text-align-last: left;
+		text-align: left;
 		margin-bottom: 30px;
 	}
 
@@ -2922,7 +2923,7 @@ iframe[name='helpcrunch-iframe'] {
 		&__right {
 			width: calc(50% - 12px);
 			border-radius: 18px;
-			padding: 40px 60px;
+			padding: 40px 45px;
 		}
 
 		&__ibox {
@@ -4461,11 +4462,11 @@ iframe[name='helpcrunch-iframe'] {
 	}
 
 	&__title {
-		font-size: 18px;
+		font-size: 24px;
 		font-weight: 700;
 		line-height: 1.4;
 		margin-bottom: 16px;
-		color: #b7b6b7;
+		color: #E1E1E1;
 	}
 
 	&__text {
@@ -4547,7 +4548,7 @@ iframe[name='helpcrunch-iframe'] {
 		}
 
 		&__title {
-			font-size: 14px;
+			font-size: 18px;
 			margin-bottom: 12px;
 		}
 
@@ -4604,6 +4605,10 @@ iframe[name='helpcrunch-iframe'] {
 			width: 54px;
 			height: 54px;
 			margin-bottom: 15px;
+		}
+
+		&__title {
+			font-size: 20px;
 		}
 	}
 }
@@ -6135,6 +6140,10 @@ iframe[name='helpcrunch-iframe'] {
 		}
 
 		& > div {
+			width: 100%;
+		}
+
+		& > p > span > div {
 			width: 100%;
 		}
 	}

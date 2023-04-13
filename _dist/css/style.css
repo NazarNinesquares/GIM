@@ -1419,6 +1419,7 @@ iframe[name=helpcrunch-iframe] {
 }
 
 .burger-nav._spoiler .left-burger-nav__spoiler._active .left-burger-nav__name {
+  display: block;
   background: rgba(225, 225, 225, 0.3019607843);
   border-left: 4px solid #e1e1e1;
 }
@@ -1976,7 +1977,7 @@ iframe[name=helpcrunch-iframe] {
   width: calc(50% - 15px);
   border-radius: 24px;
   background: #1f2125;
-  padding: 70px 80px;
+  padding: 70px 65px;
 }
 
 .bottom-features__ibox {
@@ -1999,8 +2000,7 @@ iframe[name=helpcrunch-iframe] {
 }
 
 .bottom-features__title {
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -2827,11 +2827,11 @@ iframe[name=helpcrunch-iframe] {
 }
 
 .item-create__title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 16px;
-  color: #b7b6b7;
+  color: #E1E1E1;
 }
 
 .item-create__text {
@@ -3761,6 +3761,10 @@ iframe[name=helpcrunch-iframe] {
 }
 
 .right-form__input > div {
+  width: 100%;
+}
+
+.right-form__input > p > span > div {
   width: 100%;
 }
 
@@ -4973,7 +4977,7 @@ iframe[name=helpcrunch-iframe] {
   .bottom-features__right {
     width: calc(50% - 12px);
     border-radius: 18px;
-    padding: 40px 60px;
+    padding: 40px 45px;
   }
 
   .bottom-features__ibox {
@@ -5341,7 +5345,7 @@ iframe[name=helpcrunch-iframe] {
   }
 
   .item-create__title {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 12px;
   }
 
@@ -7042,6 +7046,10 @@ iframe[name=helpcrunch-iframe] {
     width: 54px;
     height: 54px;
     margin-bottom: 15px;
+  }
+
+  .item-create__title {
+    font-size: 20px;
   }
 
   .specifics__cont {
