@@ -292,7 +292,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 170px;
   margin-top: 115px;
   padding-top: 140px;
 }
@@ -1820,7 +1820,8 @@ body.no-message .header {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  margin-bottom: 260px;
+  margin-bottom: 180px;
+  padding-top: 80px;
 }
 
 .features__text {
@@ -2016,7 +2017,8 @@ body.no-message .header {
 }
 
 .trailer__cont {
-  margin-bottom: 260px;
+  margin-bottom: 180px;
+  padding-top: 80px;
 }
 
 .trailer__video {
@@ -2106,7 +2108,8 @@ body.no-message .header {
 }
 
 .steps__cont {
-  margin-bottom: 355px;
+  margin-bottom: 275px;
+  padding-top: 80px;
 }
 
 .steps__title {
@@ -2114,7 +2117,8 @@ body.no-message .header {
 }
 
 .network__cont {
-  margin-bottom: 225px;
+  margin-bottom: 145px;
+  padding-top: 80px;
 }
 
 .network__title {
@@ -2232,7 +2236,8 @@ body.no-message .header {
 }
 
 .safety__cont {
-  margin-bottom: 360px;
+  margin-bottom: 280px;
+  padding-top: 80px;
 }
 
 .safety__title {
@@ -2285,8 +2290,8 @@ body.no-message .header {
 
 .faq__cont {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 300px;
+  padding-top: 80px;
+  padding-bottom: 220px;
 }
 
 .faq__title {
@@ -2385,7 +2390,8 @@ body.no-message .header {
 }
 
 .transfer__cont {
-  margin-bottom: 180px;
+  padding-top: 80px;
+  margin-bottom: 100px;
 }
 
 .transfer__content {
@@ -2496,7 +2502,8 @@ body.no-message .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 260px;
+  margin-bottom: 180px;
+  padding-top: 80px;
 }
 
 .wallets__list {
@@ -2735,7 +2742,8 @@ body.no-message .header {
 }
 
 .how-it-works__cont {
-  padding-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .how-it-works__tbox {
@@ -2784,7 +2792,8 @@ body.no-message .header {
   -webkit-column-gap: 54px;
      -moz-column-gap: 54px;
           column-gap: 54px;
-  padding-bottom: 200px;
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 
 .create__title {
@@ -2957,7 +2966,8 @@ body.no-message .header {
      -moz-column-gap: 120px;
           column-gap: 120px;
   row-gap: 60px;
-  padding-bottom: 160px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .terms__title {
@@ -3011,7 +3021,8 @@ body.no-message .header {
 }
 
 .protection__cont {
-  padding-bottom: 270px;
+  padding-top: 80px;
+  padding-bottom: 190px;
 }
 
 .protection__title {
@@ -3064,6 +3075,7 @@ body.no-message .header {
 }
 
 .download__cont {
+  padding-top: 80px;
   padding-bottom: 200px;
 }
 
@@ -3134,7 +3146,8 @@ body.no-message .header {
 }
 
 .steps-slider__cont {
-  margin-bottom: 190px;
+  padding-top: 80px;
+  margin-bottom: 110px;
 }
 
 .steps-slider__content {
@@ -3407,7 +3420,8 @@ body.no-message .header {
 }
 
 .advantages__cont {
-  margin-bottom: 250px;
+  padding-top: 80px;
+  margin-bottom: 170px;
   max-width: 990px;
 }
 
@@ -3559,7 +3573,8 @@ body.no-message .header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 220px;
+  margin-bottom: 140px;
+  padding-top: 80px;
 }
 
 .why__title {
@@ -3607,7 +3622,8 @@ body.no-message .header {
 }
 
 .form__cont {
-  margin-bottom: 260px;
+  margin-bottom: 180px;
+  padding-top: 80px;
 }
 
 .form__content {
@@ -3809,7 +3825,8 @@ body.no-message .header {
 }
 
 .suitable__cont {
-  margin-bottom: 282px;
+  padding-top: 80px;
+  margin-bottom: 200px;
 }
 
 .suitable__title {
@@ -3971,7 +3988,8 @@ body.no-message .header {
 }
 
 .referal__cont {
-  margin-bottom: 300px;
+  margin-bottom: 220px;
+  padding-top: 80px;
 }
 
 .referal__title {
@@ -4066,8 +4084,9 @@ body.no-message .header {
 }
 
 .necessary__cont {
+  padding-top: 80px;
   max-width: 915px;
-  margin-bottom: 145px;
+  margin-bottom: 65px;
 }
 
 .necessary__title {
@@ -4413,7 +4432,7 @@ body.no-message .header {
   .mainscreen__cont {
     padding-top: 130px;
     margin-top: 95px;
-    margin-bottom: 140px;
+    margin-bottom: 60px;
   }
 
   .mainscreen__cont_small-m {
@@ -4886,7 +4905,7 @@ body.no-message .header {
     -webkit-column-gap: 24px;
        -moz-column-gap: 24px;
             column-gap: 24px;
-    margin-bottom: 195px;
+    margin-bottom: 115px;
   }
 
   .features__item {
@@ -5004,7 +5023,7 @@ body.no-message .header {
   }
 
   .trailer__cont {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
   }
 
   .trailer__video {
@@ -5036,7 +5055,7 @@ body.no-message .header {
   }
 
   .steps__cont {
-    margin-bottom: 265px;
+    margin-bottom: 185px;
   }
 
   .steps__title {
@@ -5044,7 +5063,7 @@ body.no-message .header {
   }
 
   .network__cont {
-    margin-bottom: 170px;
+    margin-bottom: 90px;
   }
 
   .network__title {
@@ -5108,7 +5127,7 @@ body.no-message .header {
   }
 
   .safety__cont {
-    margin-bottom: 270px;
+    margin-bottom: 190px;
   }
 
   .safety__title {
@@ -5138,7 +5157,7 @@ body.no-message .header {
   }
 
   .faq__cont {
-    padding-bottom: 225px;
+    padding-bottom: 145px;
   }
 
   .faq__title {
@@ -5167,7 +5186,7 @@ body.no-message .header {
   }
 
   .transfer__cont {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 
   .transfer__content {
@@ -5204,7 +5223,7 @@ body.no-message .header {
   }
 
   .wallets__cont {
-    margin-bottom: 195px;
+    margin-bottom: 115px;
   }
 
   .wallets__list {
@@ -5300,7 +5319,7 @@ body.no-message .header {
   }
 
   .how-it-works__cont {
-    padding-bottom: 130px;
+    padding-bottom: 50px;
   }
 
   .how-it-works__tbox::before {
@@ -5324,7 +5343,7 @@ body.no-message .header {
     -webkit-column-gap: 42px;
        -moz-column-gap: 42px;
             column-gap: 42px;
-    padding-bottom: 180px;
+    padding-bottom: 100px;
   }
 
   .create__title {
@@ -5408,7 +5427,7 @@ body.no-message .header {
        -moz-column-gap: 90px;
             column-gap: 90px;
     row-gap: 45px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
   }
 
   .terms__item {
@@ -5428,7 +5447,7 @@ body.no-message .header {
   }
 
   .protection__cont {
-    padding-bottom: 260px;
+    padding-bottom: 180px;
   }
 
   .protection__title {
@@ -5498,7 +5517,7 @@ body.no-message .header {
   }
 
   .steps-slider__cont {
-    margin-bottom: 140px;
+    margin-bottom: 60px;
   }
 
   .steps-slider__content {
@@ -5610,7 +5629,7 @@ body.no-message .header {
   }
 
   .advantages__cont {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
     max-width: 740px;
   }
 
@@ -5676,7 +5695,7 @@ body.no-message .header {
 
   .why__cont {
     gap: 18px;
-    margin-bottom: 165px;
+    margin-bottom: 185px;
   }
 
   .why__title {
@@ -5706,7 +5725,7 @@ body.no-message .header {
   }
 
   .form__cont {
-    margin-bottom: 195px;
+    margin-bottom: 115px;
   }
 
   .form__content {
@@ -5807,7 +5826,7 @@ body.no-message .header {
   }
 
   .suitable__cont {
-    margin-bottom: 195px;
+    margin-bottom: 115px;
   }
 
   .suitable__title {
@@ -5882,7 +5901,7 @@ body.no-message .header {
   }
 
   .referal__cont {
-    margin-bottom: 225px;
+    margin-bottom: 145px;
   }
 
   .referal__title {
@@ -6121,7 +6140,7 @@ body.no-message .header {
 
 @media (max-width: 890px) {
   .suitable__cont {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 
   .suitable__title {
@@ -6263,7 +6282,7 @@ body.no-message .header {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
     padding-top: 60px;
   }
 
@@ -6682,7 +6701,7 @@ body.no-message .header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 
   .features__item {
@@ -6737,7 +6756,7 @@ body.no-message .header {
   }
 
   .trailer__cont {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 
   .trailer__video {
@@ -6766,7 +6785,7 @@ body.no-message .header {
   }
 
   .steps__cont {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
   }
 
   .steps__title {
@@ -6774,7 +6793,7 @@ body.no-message .header {
   }
 
   .network__cont {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
 
   .network__title {
@@ -6818,7 +6837,7 @@ body.no-message .header {
   }
 
   .safety__cont {
-    margin-bottom: 125px;
+    margin-bottom: 45px;
   }
 
   .safety__subtitle {
@@ -6845,8 +6864,7 @@ body.no-message .header {
   }
 
   .faq__cont {
-    padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
   }
 
   .faq__show {
@@ -6862,10 +6880,6 @@ body.no-message .header {
 
   .transfer {
     background: #121314;
-  }
-
-  .transfer__cont {
-    margin-bottom: 45px;
   }
 
   .transfer__content {
@@ -6899,7 +6913,7 @@ body.no-message .header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 
   .wallets__list {
@@ -7006,7 +7020,7 @@ body.no-message .header {
   }
 
   .how-it-works__cont {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 
   .how-it-works__tbox {
@@ -7035,7 +7049,7 @@ body.no-message .header {
     row-gap: 40px;
     max-width: 500px;
     margin: 0 auto;
-    padding-bottom: 140px;
+    padding-bottom: 60px;
   }
 
   .create__title {
@@ -7095,7 +7109,7 @@ body.no-message .header {
   }
 
   .protection__cont {
-    padding-bottom: 160px;
+    padding-bottom: 80px;
   }
 
   .list-protection {
@@ -7152,10 +7166,6 @@ body.no-message .header {
 
   .download__text_cut-width {
     max-width: 260px;
-  }
-
-  .steps-slider__cont {
-    margin-bottom: 80px;
   }
 
   .steps-slider__content {
@@ -7239,10 +7249,6 @@ body.no-message .header {
     margin-bottom: 20px;
   }
 
-  .advantages__cont {
-    margin-bottom: 160px;
-  }
-
   .advantages__subtitle {
     margin-bottom: 80px;
   }
@@ -7314,7 +7320,7 @@ body.no-message .header {
 
   .why__cont {
     gap: 24px;
-    margin-bottom: 140px;
+    margin-bottom: 60px;
   }
 
   .why__title {
@@ -7437,7 +7443,7 @@ body.no-message .header {
   }
 
   .referal__cont {
-    margin-bottom: 150px;
+    margin-bottom: 70px;
   }
 
   .referal__subtitle {
@@ -7473,7 +7479,7 @@ body.no-message .header {
   .necessary__cont {
     max-width: 455px;
     min-width: 455px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
   }
 
   .necessary__item_1 {
