@@ -699,6 +699,10 @@ iframe[name=helpcrunch-iframe] {
   z-index: 100 !important;
 }
 
+body.no-masage .header {
+  margin-top: 0;
+}
+
 .masage {
   position: fixed;
   top: 0;
