@@ -103,9 +103,9 @@ $(document).ready(function () {
 
         let st = $(this).scrollTop();
         if (st > scrollPos) {
-            $('.masage, .header, .burger-nav__top, .burger-nav._tab .burger-nav__right, .burger-nav._tab .burger-nav__left').addClass('_scroll');
+            $('.message, .header, .burger-nav__top, .burger-nav._tab .burger-nav__right, .burger-nav._tab .burger-nav__left').addClass('_scroll');
         } else {
-            $('.masage, .header, .burger-nav__top, .burger-nav._tab .burger-nav__right, .burger-nav._tab .burger-nav__left').removeClass('_scroll');
+            $('.message, .header, .burger-nav__top, .burger-nav._tab .burger-nav__right, .burger-nav._tab .burger-nav__left').removeClass('_scroll');
         }
         scrollPos = st;
 

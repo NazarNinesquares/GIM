@@ -1116,11 +1116,11 @@ iframe[name='helpcrunch-iframe'] {
 
 //<================================================================ ХЕДЕР ==============================================================>\\
 
-body.no-masage .header {
+body.no-message .header {
 	margin-top: 0;
 }
 
-.masage {
+.message {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1878,7 +1878,7 @@ body.no-masage .header {
 
 @media (max-width: 1440px) {
 
-	.masage {
+	.message {
 		font-size: 15px;
 	}
 
@@ -2055,7 +2055,7 @@ body.no-masage .header {
 
 @media (max-width: 768px) {
 
-	.masage {
+	.message {
 		font-size: 11px;
 	}
 
