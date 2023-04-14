@@ -1256,6 +1256,10 @@ body.no-message .header {
   stroke: #3A3A3A;
 }
 
+.right-burger-nav__item._disable {
+  pointer-events: none;
+}
+
 .burger-nav._tab .burger-nav__top {
   position: absolute;
   top: 0;
@@ -3349,7 +3353,7 @@ body.no-message .header {
   margin-bottom: 30px;
 }
 
-.content-legal__block ul li {
+.content-legal__block ul > li {
   position: relative;
   font-size: 18px;
   font-weight: 400;
@@ -3359,7 +3363,7 @@ body.no-message .header {
   padding-left: 15px;
 }
 
-.content-legal__block ul li::before {
+.content-legal__block ul > li::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -3370,12 +3374,12 @@ body.no-message .header {
   border-radius: 50%;
 }
 
-.content-legal__block ul li:first-child {
+.content-legal__block ul > li:first-child {
   font-weight: 500;
   margin-left: 0;
 }
 
-.content-legal__block ul li:first-child::before {
+.content-legal__block ul > li:first-child::before {
   width: 6px;
   height: 6px;
   top: 10px;
@@ -3402,7 +3406,7 @@ body.no-message .header {
   counter-reset: ol-numbers;
 }
 
-.content-legal__block ol li {
+.content-legal__block ol > li {
   position: relative;
   padding-left: 15px;
   font-size: 18px;
@@ -3411,7 +3415,7 @@ body.no-message .header {
   color: #a9a8a8;
 }
 
-.content-legal__block ol li::before {
+.content-legal__block ol > li::before {
   counter-increment: ol-numbers;
   content: counter(ol-numbers) ".";
   position: absolute;
@@ -5593,19 +5597,19 @@ body.no-message .header {
     margin-bottom: 25px;
   }
 
-  .content-legal__block ul li {
+  .content-legal__block ul > li {
     font-size: 13px;
     margin-left: 20px;
     padding-left: 12px;
   }
 
-  .content-legal__block ul li::before {
+  .content-legal__block ul > li::before {
     top: 9px;
     width: 3px;
     height: 3px;
   }
 
-  .content-legal__block ul li:first-child::before {
+  .content-legal__block ul > li:first-child::before {
     width: 4px;
     height: 4px;
     top: 7px;
@@ -5624,7 +5628,7 @@ body.no-message .header {
     margin-bottom: 16px;
   }
 
-  .content-legal__block ol li {
+  .content-legal__block ol > li {
     font-size: 13px;
   }
 

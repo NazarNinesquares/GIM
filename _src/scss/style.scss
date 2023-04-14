@@ -1607,6 +1607,13 @@ body.no-message .header {
 			}
 		}
 	}
+
+	&__item {
+
+		&._disable {
+			pointer-events: none;
+		}
+	}
 }
 
 .burger-nav._tab {
@@ -5448,7 +5455,7 @@ body.no-message .header {
 			margin-bottom: 30px;
 		}
 
-		& ul li {
+		& ul > li {
 			position: relative;
 			font-size: 18px;
 			font-weight: 400;
@@ -5469,7 +5476,7 @@ body.no-message .header {
 			}
 		}
 
-		& ul li:first-child {
+		& ul > li:first-child {
 			font-weight: 500;
 			margin-left: 0;
 
@@ -5501,7 +5508,7 @@ body.no-message .header {
 			counter-reset: ol-numbers;
 		}
 
-		& ol li {
+		& ol > li {
 			position: relative;
 			padding-left: 15px;
 			font-size: 18px;
@@ -5510,7 +5517,7 @@ body.no-message .header {
 			color: #a9a8a8;
 		}
 
-		& ol li::before {
+		& ol > li::before {
 			counter-increment: ol-numbers;
 			content: counter(ol-numbers) ".";
 			position: absolute;
@@ -5558,7 +5565,7 @@ body.no-message .header {
 				margin-bottom: 25px;
 			}
 
-			& ul li {
+			& ul > li {
 				font-size: 13px;
 				margin-left: 20px;
 				padding-left: 12px;
@@ -5570,7 +5577,7 @@ body.no-message .header {
 				}
 			}
 
-			& ul li:first-child {
+			& ul > li:first-child {
 
 				&::before {
 					width: 4px;
@@ -5592,7 +5599,7 @@ body.no-message .header {
 				margin-bottom: 16px;
 			}
 
-			& ol li {
+			& ol > li {
 				font-size: 13px;
 			}
 		}
