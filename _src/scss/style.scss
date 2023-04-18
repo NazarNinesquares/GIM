@@ -1119,8 +1119,17 @@ iframe[name='helpcrunch-iframe'] {
 
 //<================================================================ ХЕДЕР ==============================================================>\\
 
-body.no-message .header {
-	margin-top: 0;
+body.no-message {
+	
+	// body.no-message .header
+	.header {
+		margin-top: 0;
+	}
+
+	// body.no-message .burger-nav__top
+	.burger-nav__top {
+		margin-top: 30px;
+	}
 }
 
 .message {
@@ -5510,7 +5519,7 @@ body.no-message .header {
 
 		& ol > li {
 			position: relative;
-			padding-left: 15px;
+			padding-left: 30px;
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 1.6;
