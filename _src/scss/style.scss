@@ -3144,6 +3144,10 @@ body.no-message {
 			margin-bottom: 40px;
 		}
 
+		&__title {
+			margin-bottom: 70px;
+		}
+
 		&__item {
 			width: 100%;
 			max-width: 400px;
@@ -7750,7 +7754,7 @@ body.no-message {
 	.download-app {
 
 		&__cont {
-			margin-bottom: 220px;
+			margin-bottom: 170px;
 		}
 	}
 }
@@ -7853,7 +7857,7 @@ body.no-message {
 	
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
 
 	.locations {
 
