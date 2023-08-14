@@ -2302,18 +2302,22 @@ body.no-message {
 
 	&__cont {
 		display: flex;
-		column-gap: 60px;
+		column-gap: 20px;
 	}
 
 	&__left,
 	&__right {
-		width: calc(50% - 30px);
 		padding-top: 35px;
 		padding-bottom: 50px;
 	}
 
+	&__right {
+		width: calc(55% - 10px);
+	}
+
 	&__left {
-		padding-right: 60px;
+		width: calc(45% - 10px);
+		padding-right: 20px;
 		border-right: 1px solid #494949;
 	}
 }
@@ -2335,7 +2339,7 @@ body.no-message {
 	}
 
 	&__left {
-		margin-right: 110px;
+		margin-right: 75px;
 	}
 
 	&__logo {
@@ -2409,7 +2413,7 @@ body.no-message {
 		display: flex;
 		flex-wrap: wrap;
 		row-gap: 30px;
-		column-gap: 50px;
+		column-gap: 9px;
 	}
 
 	&__info-item {
@@ -2498,10 +2502,10 @@ body.no-message {
 
 .right-footer {
 	display: flex;
-	gap: 21px;
+	gap: 8px;
 
 	&__row {
-		width: calc(33.33% - 14px);
+		width: calc(25% - 6px);
 
 		&_doble {
 			display: flex;
@@ -2513,7 +2517,11 @@ body.no-message {
 	&__list {
 		font-size: 12px;
 		font-weight: 400;
-		line-height: 2.5;
+		line-height: 1.2;
+
+		& li:not(:last-child) {
+			margin-bottom: 10px;
+		}
 
 		& li a {
 			color: #878787;
@@ -2542,19 +2550,10 @@ body.no-message {
 
 	.footer {
 
-		&__cont {
-			column-gap: 44px;
-		}
-
 		&__left,
 		&__right {
-			width: calc(50% - 22px);
 			padding-top: 25px;
 			padding-bottom: 40px;
-		}
-
-		&__left {
-			padding-right: 45px;
 		}
 	}
 
@@ -2570,10 +2569,6 @@ body.no-message {
 
 		&__social {
 			margin-bottom: 60px;
-		}
-
-		&__left {
-			margin-right: 80px;
 		}
 
 		&__logo {
@@ -2633,10 +2628,8 @@ body.no-message {
 	}
 
 	.right-footer {
-		gap: 15px;
 
 		&__row {
-			width: calc(33.33% - 10px);
 
 			&_doble {
 				row-gap: 40px;

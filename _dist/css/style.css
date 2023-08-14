@@ -1608,20 +1608,24 @@ body.no-message .burger-nav__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 60px;
-     -moz-column-gap: 60px;
-          column-gap: 60px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .footer__left,
 .footer__right {
-  width: calc(50% - 30px);
   padding-top: 35px;
   padding-bottom: 50px;
 }
 
+.footer__right {
+  width: calc(55% - 10px);
+}
+
 .footer__left {
-  padding-right: 60px;
+  width: calc(45% - 10px);
+  padding-right: 20px;
   border-right: 1px solid #494949;
 }
 
@@ -1639,7 +1643,7 @@ body.no-message .burger-nav__top {
 }
 
 .top-footer__left {
-  margin-right: 110px;
+  margin-right: 75px;
 }
 
 .top-footer__logo {
@@ -1726,9 +1730,9 @@ body.no-message .burger-nav__top {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 30px;
-  -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px;
 }
 
 .top-footer__info-item {
@@ -1823,11 +1827,11 @@ body.no-message .burger-nav__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 21px;
+  gap: 8px;
 }
 
 .right-footer__row {
-  width: calc(33.33% - 14px);
+  width: calc(25% - 6px);
 }
 
 .right-footer__row_doble {
@@ -1844,7 +1848,11 @@ body.no-message .burger-nav__top {
 .right-footer__list {
   font-size: 12px;
   font-weight: 400;
-  line-height: 2.5;
+  line-height: 1.2;
+}
+
+.right-footer__list li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .right-footer__list li a {
@@ -5005,21 +5013,10 @@ body.no-message .burger-nav__top {
     pointer-events: all;
   }
 
-  .footer__cont {
-    -webkit-column-gap: 44px;
-       -moz-column-gap: 44px;
-            column-gap: 44px;
-  }
-
   .footer__left,
   .footer__right {
-    width: calc(50% - 22px);
     padding-top: 25px;
     padding-bottom: 40px;
-  }
-
-  .footer__left {
-    padding-right: 45px;
   }
 
   .left-footer__top {
@@ -5029,10 +5026,6 @@ body.no-message .burger-nav__top {
 
   .top-footer__social {
     margin-bottom: 60px;
-  }
-
-  .top-footer__left {
-    margin-right: 80px;
   }
 
   .top-footer__logo {
@@ -5090,14 +5083,6 @@ body.no-message .burger-nav__top {
 
   .bottom-footer__info p {
     margin-bottom: 12px;
-  }
-
-  .right-footer {
-    gap: 15px;
-  }
-
-  .right-footer__row {
-    width: calc(33.33% - 10px);
   }
 
   .right-footer__row_doble {
